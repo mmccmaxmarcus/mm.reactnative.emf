@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/mm.reactNative.emf/src" modelPluginID="mm.reactNative.emf"
+    modelName="ReactNative" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" runtimePlatform="RCP" importOrganizing="true">
+  <foreignModel>reactNative.ecore</foreignModel>
+  <genPackages prefix="ReactNative" disposableProviderFactory="true" ecorePackage="reactNative.ecore#/">
+    <genClasses ecoreClass="reactNative.ecore#//View">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//View/hasText"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//View/ViewToflatlists"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//View/viewType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//View/viewName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//View/hasImage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//View/viewToTouchableOpacity"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//View/viewToIcon"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//View/viewToButton"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//View/subView"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//View/ViewToStyleSheet"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference reactNative.ecore#//View/viewToSectionList"/>
+      <genOperations ecoreOperation="reactNative.ecore#//View/style">
+        <genParameters ecoreParameter="reactNative.ecore#//View/style/style"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="reactNative.ecore#//Text">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Text/contentText"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Text/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Text/fontSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Text/textAlign"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Text/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//Text/TextToStylesheet"/>
+    </genClasses>
+    <genClasses ecoreClass="reactNative.ecore#//FlatList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//FlatList/hasViews"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//FlatList/flatlistName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//FlatList/data"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//FlatList/renderItem"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//FlatList/keyExtractor"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference reactNative.ecore#//FlatList/flatListToArray"/>
+    </genClasses>
+    <genClasses ecoreClass="reactNative.ecore#//Component">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//Component/componentTotext"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Component/componentName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//Component/componentToView"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Component/state"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//Component/componentToTouchableOpacity"/>
+    </genClasses>
+    <genClasses ecoreClass="reactNative.ecore#//ProjetoRN">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//ProjetoRN/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//ProjetoRN/components"/>
+    </genClasses>
+    <genClasses ecoreClass="reactNative.ecore#//Image">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Image/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Image/source"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//Image/imageTostylesheet"/>
+    </genClasses>
+    <genClasses ecoreClass="reactNative.ecore#//TouchableOpacity">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//TouchableOpacity/touchableOpacityToIcon"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//TouchableOpacity/touchableOpacityToImage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//TouchableOpacity/touchableOpacityToText"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//TouchableOpacity/touchableOpacityView"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//TouchableOpacity/touchableOpacityToButton"/>
+    </genClasses>
+    <genClasses ecoreClass="reactNative.ecore#//Icon">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Icon/style"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Icon/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Icon/size"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Icon/color"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//Icon/IconToStylesheet"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="reactNative.ecore#//TouchablesGenerics">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//TouchablesGenerics/onPress"/>
+    </genClasses>
+    <genClasses ecoreClass="reactNative.ecore#//Button">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Button/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Button/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Button/disabled"/>
+    </genClasses>
+    <genClasses ecoreClass="reactNative.ecore#//StyleSheet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//StyleSheet/nameStyle"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//StyleSheet/hasFlexbox"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//StyleSheet/hasFont"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference reactNative.ecore#//StyleSheet/hasMargin"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//StyleSheet/hasBorder"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//StyleSheet/hasPadding"/>
+    </genClasses>
+    <genClasses ecoreClass="reactNative.ecore#//FlexBox">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//FlexBox/flex"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//FlexBox/flexDirection"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//FlexBox/justifyContent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//FlexBox/alignItems"/>
+    </genClasses>
+    <genClasses ecoreClass="reactNative.ecore#//Font">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Font/fontSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Font/fontFamily"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Font/fontWeight"/>
+    </genClasses>
+    <genClasses ecoreClass="reactNative.ecore#//SectionList">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//SectionList/sectionListName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//SectionList/sections"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//SectionList/keyExtractor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//SectionList/renderSectionHeader"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//SectionList/renderItem"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference reactNative.ecore#//SectionList/sectionListToArray"/>
+    </genClasses>
+    <genClasses ecoreClass="reactNative.ecore#//Margin">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Margin/marginTop"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Margin/marginBottom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Margin/margin"/>
+    </genClasses>
+    <genClasses ecoreClass="reactNative.ecore#//Array">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Array/value"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference reactNative.ecore#//Array/subArray"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//Array/arrayToObjects"/>
+    </genClasses>
+    <genClasses ecoreClass="reactNative.ecore#//ElementText">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//ElementText/contentText"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//ElementText/valueText"/>
+    </genClasses>
+    <genClasses ecoreClass="reactNative.ecore#//ElementImage">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//ElementImage/contentImage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//ElementImage/valueImage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//ElementImage/elementImageToArray"/>
+    </genClasses>
+    <genClasses ecoreClass="reactNative.ecore#//ObjectElement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//ObjectElement/elementText"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//ObjectElement/elementImage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//ObjectElement/subObjects"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//ObjectElement/objectToArray"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//ObjectElement/id"/>
+    </genClasses>
+    <genClasses ecoreClass="reactNative.ecore#//Border">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Border/borderBottomRightRadius"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Border/borderColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Border/borderRadius"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Border/borderWidth"/>
+    </genClasses>
+    <genClasses ecoreClass="reactNative.ecore#//Padding">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Padding/padding"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Padding/paddingHorizontal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//Padding/paddingVertical"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
