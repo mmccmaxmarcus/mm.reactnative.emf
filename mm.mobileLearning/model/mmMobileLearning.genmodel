@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/mm.mobileLearning/src" modelPluginID="mm.mobileLearning"
+    modelName="MmMobileLearning" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" runtimePlatform="RCP" importOrganizing="true">
+  <foreignModel>mmMobileLearning.ecore</foreignModel>
+  <genPackages prefix="MmMobileLearning" disposableProviderFactory="true" ecorePackage="mmMobileLearning.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="mmMobileLearning.ecore#//TextType">
+      <genEnumLiterals ecoreEnumLiteral="mmMobileLearning.ecore#//TextType/TEXTLINE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmMobileLearning.ecore#//TextType/MULTLINETEXT"/>
+    </genEnums>
+    <genClasses ecoreClass="mmMobileLearning.ecore#//MKnowledgeDomain">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mmMobileLearning.ecore#//MKnowledgeDomain/mHasConcept"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//MKnowledgeDomain/mNameKD"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mmMobileLearning.ecore#//MKnowledgeDomain/kDomainToMmodule"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mmMobileLearning.ecore#//MKnowledgeDomain/mKdomainToScreen"/>
+    </genClasses>
+    <genClasses ecoreClass="mmMobileLearning.ecore#//MConcept">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//MConcept/nameMConcept"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mmMobileLearning.ecore#//MConcept/mSubConcept"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mmMobileLearning.ecore#//MConcept/mHasReference"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mmMobileLearning.ecore#//MConcept/mConceptToScreen"/>
+    </genClasses>
+    <genClasses ecoreClass="mmMobileLearning.ecore#//MReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mmMobileLearning.ecore#//MReference/mReferenceToConcept"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//MReference/mNameReference"/>
+    </genClasses>
+    <genClasses ecoreClass="mmMobileLearning.ecore#//Screen">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//Screen/label"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mmMobileLearning.ecore#//Screen/screenToElementInterface"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//Screen/origemElement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mmMobileLearning.ecore#//Screen/screenToMModule"/>
+    </genClasses>
+    <genClasses ecoreClass="mmMobileLearning.ecore#//Text">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//Text/textDisplay"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//Text/textInformation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//Text/type"/>
+    </genClasses>
+    <genClasses ecoreClass="mmMobileLearning.ecore#//Image">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//Image/textinformation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//Image/nameImg"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//Image/pathImg"/>
+    </genClasses>
+    <genClasses ecoreClass="mmMobileLearning.ecore#//Video">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//Video/textInformation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//Video/nameVideo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//Video/pathVideo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//Video/resolution"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//Video/time"/>
+    </genClasses>
+    <genClasses ecoreClass="mmMobileLearning.ecore#//Audio">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//Audio/textInformation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//Audio/nameAudio"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//Audio/pathAudio"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//Audio/time"/>
+    </genClasses>
+    <genClasses ecoreClass="mmMobileLearning.ecore#//Link">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//Link/link"/>
+    </genClasses>
+    <genClasses ecoreClass="mmMobileLearning.ecore#//ElementInterface">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//ElementInterface/label"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mmMobileLearning.ecore#//ElementInterface/subElementInterface"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//ElementInterface/origemElement"/>
+    </genClasses>
+    <genClasses ecoreClass="mmMobileLearning.ecore#//MModule">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//MModule/label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//MModule/nameModule"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmMobileLearning.ecore#//MModule/visible"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mmMobileLearning.ecore#//MModule/mModuleToMConcept"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mmMobileLearning.ecore#//MModule/subModule"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mmMobileLearning.ecore#//MModule/mModuleToScreen"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

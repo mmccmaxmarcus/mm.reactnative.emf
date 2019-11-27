@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension
+         point="org.eclipse.core.runtime.applications"
+         id="MmMobileLearningEditorAdvisorApplication">
+      <!-- @generated mmMobileLearning -->
+      <application>
+         <run class="mmMobileLearning.presentation.MmMobileLearningEditorAdvisor$Application"/>
+      </application>
+   </extension>
+
+   <extension point="org.eclipse.ui.perspectives">
+      <!-- @generated mmMobileLearning -->
+      <perspective
+            name="%_UI_Perspective_label"
+            class="mmMobileLearning.presentation.MmMobileLearningEditorAdvisor$Perspective"
+            id="mmMobileLearning.presentation.MmMobileLearningEditorAdvisorPerspective">
+      </perspective>
+   </extension>
+
+   <extension point="org.eclipse.ui.commands">
+      <!-- @generated mmMobileLearning -->
+      <command
+            name="%_UI_Menu_OpenURI_label"
+            description="%_UI_Menu_OpenURI_description"
+            categoryId="org.eclipse.ui.category.file"
+            id="mmMobileLearning.presentation.MmMobileLearningEditorAdvisorOpenURICommand"/>
+      <command
+            name="%_UI_Menu_Open_label"
+            description="%_UI_Menu_Open_description"
+            categoryId="org.eclipse.ui.category.file"
+            id="mmMobileLearning.presentation.MmMobileLearningEditorAdvisorOpenCommand"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.bindings">
+      <!-- @generated mmMobileLearning -->
+      <key
+            commandId="mmMobileLearning.presentation.MmMobileLearningEditorAdvisorOpenURICommand"
+            sequence="M1+U"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+      <key
+            commandId="mmMobileLearning.presentation.MmMobileLearningEditorAdvisorOpenCommand"
+            sequence="M1+O"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.actionSets">
+      <!-- @generated mmMobileLearning -->
+      <actionSet
+            label="%_UI_MmMobileLearningEditorAdvisor_ActionSet_label"
+            visible="true"
+            id="MmMobileLearningEditorAdvisorActionSet">
+         <action
+               label="%_UI_Menu_About_label"
+               class="mmMobileLearning.presentation.MmMobileLearningEditorAdvisor$AboutAction"
+               menubarPath="help/additions"
+               id="mmMobileLearning.presentation.MmMobileLearningEditorAdvisorAboutAction"/>
+         <action
+               label="%_UI_Menu_OpenURI_label"
+               definitionId="mmMobileLearning.presentation.MmMobileLearningEditorAdvisorOpenURICommand"
+               class="mmMobileLearning.presentation.MmMobileLearningEditorAdvisor$OpenURIAction"
+               menubarPath="file/additions"
+               id="mmMobileLearning.presentation.MmMobileLearningEditorAdvisorOpenURIAction"/>
+         <action
+               label="%_UI_Menu_Open_label"
+               definitionId="mmMobileLearning.presentation.MmMobileLearningEditorAdvisorOpenCommand"
+               class="mmMobileLearning.presentation.MmMobileLearningEditorAdvisor$OpenAction"
+               menubarPath="file/additions"
+               id="mmMobileLearning.presentation.MmMobileLearningEditorAdvisorOpenAction"/>
+      </actionSet>
+   </extension>
+
+   <extension point="org.eclipse.ui.actionSets">
+      <!-- @generated mmMobileLearning -->
+      <actionSet
+            label="%_UI_MmMobileLearningModelWizard_ActionSet_label"
+            visible="true"
+            id="mmMobileLearning.presentation.MmMobileLearningActionBarContributorActionSet">
+         <action
+               label="%_UI_MmMobileLearningModelWizard_label"
+               class="mmMobileLearning.presentation.MmMobileLearningActionBarContributor$NewAction"
+               menubarPath="file/new/additions"
+               id="mmMobileLearning.presentation.MmMobileLearningActionBarContributorNewAction"/>
+      </actionSet>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated mmMobileLearning -->
+      <editor
+            id="mmMobileLearning.presentation.MmMobileLearningEditorID"
+            name="%_UI_MmMobileLearningEditor_label"
+            icon="icons/full/obj16/MmMobileLearningModelFile.gif"
+            extensions="mmmobilelearning"
+            class="mmMobileLearning.presentation.MmMobileLearningEditor"
+            contributorClass="mmMobileLearning.presentation.MmMobileLearningActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

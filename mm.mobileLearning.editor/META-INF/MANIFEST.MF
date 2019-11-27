@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: mm.mobileLearning.editor;singleton:=true
+Automatic-Module-Name: mm.mobileLearning.editor
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Activator: mmMobileLearning.presentation.MmMobileLearningEditorPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: mmMobileLearning.presentation
+Require-Bundle: org.eclipse.core.runtime,
+ mm.mobileLearning.edit;visibility:=reexport,
+ org.eclipse.emf.ecore.xmi;visibility:=reexport,
+ org.eclipse.emf.edit.ui;visibility:=reexport
+Bundle-ActivationPolicy: lazy
