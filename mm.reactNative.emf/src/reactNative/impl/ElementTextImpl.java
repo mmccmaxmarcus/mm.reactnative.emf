@@ -2,13 +2,20 @@
  */
 package reactNative.impl;
 
+import java.util.Collection;
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+import reactNative.Array;
 import reactNative.ElementText;
 import reactNative.ReactNativePackage;
 
@@ -22,6 +29,7 @@ import reactNative.ReactNativePackage;
  * <ul>
  *   <li>{@link reactNative.impl.ElementTextImpl#getContentText <em>Content Text</em>}</li>
  *   <li>{@link reactNative.impl.ElementTextImpl#getValueText <em>Value Text</em>}</li>
+ *   <li>{@link reactNative.impl.ElementTextImpl#getElementTextToArray <em>Element Text To Array</em>}</li>
  * </ul>
  *
  * @generated
@@ -68,6 +76,16 @@ public class ElementTextImpl extends MinimalEObjectImpl.Container implements Ele
 	protected String valueText = VALUE_TEXT_EDEFAULT;
 
 	/**
+	 * The cached value of the '{@link #getElementTextToArray() <em>Element Text To Array</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getElementTextToArray()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Array> elementTextToArray;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -91,6 +109,7 @@ public class ElementTextImpl extends MinimalEObjectImpl.Container implements Ele
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getContentText() {
 		return contentText;
 	}
@@ -100,6 +119,7 @@ public class ElementTextImpl extends MinimalEObjectImpl.Container implements Ele
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContentText(String newContentText) {
 		String oldContentText = contentText;
 		contentText = newContentText;
@@ -112,6 +132,7 @@ public class ElementTextImpl extends MinimalEObjectImpl.Container implements Ele
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getValueText() {
 		return valueText;
 	}
@@ -121,11 +142,39 @@ public class ElementTextImpl extends MinimalEObjectImpl.Container implements Ele
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setValueText(String newValueText) {
 		String oldValueText = valueText;
 		valueText = newValueText;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, ReactNativePackage.ELEMENT_TEXT__VALUE_TEXT, oldValueText, valueText));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<Array> getElementTextToArray() {
+		if (elementTextToArray == null) {
+			elementTextToArray = new EObjectContainmentEList<Array>(Array.class, this, ReactNativePackage.ELEMENT_TEXT__ELEMENT_TEXT_TO_ARRAY);
+		}
+		return elementTextToArray;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case ReactNativePackage.ELEMENT_TEXT__ELEMENT_TEXT_TO_ARRAY:
+				return ((InternalEList<?>)getElementTextToArray()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -140,6 +189,8 @@ public class ElementTextImpl extends MinimalEObjectImpl.Container implements Ele
 				return getContentText();
 			case ReactNativePackage.ELEMENT_TEXT__VALUE_TEXT:
 				return getValueText();
+			case ReactNativePackage.ELEMENT_TEXT__ELEMENT_TEXT_TO_ARRAY:
+				return getElementTextToArray();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -149,6 +200,7 @@ public class ElementTextImpl extends MinimalEObjectImpl.Container implements Ele
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -157,6 +209,10 @@ public class ElementTextImpl extends MinimalEObjectImpl.Container implements Ele
 				return;
 			case ReactNativePackage.ELEMENT_TEXT__VALUE_TEXT:
 				setValueText((String)newValue);
+				return;
+			case ReactNativePackage.ELEMENT_TEXT__ELEMENT_TEXT_TO_ARRAY:
+				getElementTextToArray().clear();
+				getElementTextToArray().addAll((Collection<? extends Array>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -176,6 +232,9 @@ public class ElementTextImpl extends MinimalEObjectImpl.Container implements Ele
 			case ReactNativePackage.ELEMENT_TEXT__VALUE_TEXT:
 				setValueText(VALUE_TEXT_EDEFAULT);
 				return;
+			case ReactNativePackage.ELEMENT_TEXT__ELEMENT_TEXT_TO_ARRAY:
+				getElementTextToArray().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -192,6 +251,8 @@ public class ElementTextImpl extends MinimalEObjectImpl.Container implements Ele
 				return CONTENT_TEXT_EDEFAULT == null ? contentText != null : !CONTENT_TEXT_EDEFAULT.equals(contentText);
 			case ReactNativePackage.ELEMENT_TEXT__VALUE_TEXT:
 				return VALUE_TEXT_EDEFAULT == null ? valueText != null : !VALUE_TEXT_EDEFAULT.equals(valueText);
+			case ReactNativePackage.ELEMENT_TEXT__ELEMENT_TEXT_TO_ARRAY:
+				return elementTextToArray != null && !elementTextToArray.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

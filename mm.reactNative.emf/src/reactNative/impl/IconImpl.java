@@ -154,6 +154,7 @@ public class IconImpl extends MinimalEObjectImpl.Container implements Icon {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getStyle() {
 		return style;
 	}
@@ -163,6 +164,7 @@ public class IconImpl extends MinimalEObjectImpl.Container implements Icon {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStyle(String newStyle) {
 		String oldStyle = style;
 		style = newStyle;
@@ -175,6 +177,7 @@ public class IconImpl extends MinimalEObjectImpl.Container implements Icon {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -184,6 +187,7 @@ public class IconImpl extends MinimalEObjectImpl.Container implements Icon {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
@@ -196,6 +200,7 @@ public class IconImpl extends MinimalEObjectImpl.Container implements Icon {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getSize() {
 		return size;
 	}
@@ -205,6 +210,7 @@ public class IconImpl extends MinimalEObjectImpl.Container implements Icon {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSize(int newSize) {
 		int oldSize = size;
 		size = newSize;
@@ -217,6 +223,7 @@ public class IconImpl extends MinimalEObjectImpl.Container implements Icon {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getColor() {
 		return color;
 	}
@@ -226,6 +233,7 @@ public class IconImpl extends MinimalEObjectImpl.Container implements Icon {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setColor(String newColor) {
 		String oldColor = color;
 		color = newColor;
@@ -238,6 +246,7 @@ public class IconImpl extends MinimalEObjectImpl.Container implements Icon {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<StyleSheet> getIconToStylesheet() {
 		if (iconToStylesheet == null) {
 			iconToStylesheet = new EObjectContainmentEList<StyleSheet>(StyleSheet.class, this, ReactNativePackage.ICON__ICON_TO_STYLESHEET);

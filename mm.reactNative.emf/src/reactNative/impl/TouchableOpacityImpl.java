@@ -114,6 +114,7 @@ public class TouchableOpacityImpl extends TouchablesGenericsImpl implements Touc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Icon> getTouchableOpacityToIcon() {
 		if (touchableOpacityToIcon == null) {
 			touchableOpacityToIcon = new EObjectContainmentEList<Icon>(Icon.class, this, ReactNativePackage.TOUCHABLE_OPACITY__TOUCHABLE_OPACITY_TO_ICON);
@@ -126,6 +127,7 @@ public class TouchableOpacityImpl extends TouchablesGenericsImpl implements Touc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Image> getTouchableOpacityToImage() {
 		if (touchableOpacityToImage == null) {
 			touchableOpacityToImage = new EObjectContainmentEList<Image>(Image.class, this, ReactNativePackage.TOUCHABLE_OPACITY__TOUCHABLE_OPACITY_TO_IMAGE);
@@ -138,6 +140,7 @@ public class TouchableOpacityImpl extends TouchablesGenericsImpl implements Touc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Text> getTouchableOpacityToText() {
 		if (touchableOpacityToText == null) {
 			touchableOpacityToText = new EObjectContainmentEList<Text>(Text.class, this, ReactNativePackage.TOUCHABLE_OPACITY__TOUCHABLE_OPACITY_TO_TEXT);
@@ -150,6 +153,7 @@ public class TouchableOpacityImpl extends TouchablesGenericsImpl implements Touc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<View> getTouchableOpacityView() {
 		if (touchableOpacityView == null) {
 			touchableOpacityView = new EObjectContainmentEList<View>(View.class, this, ReactNativePackage.TOUCHABLE_OPACITY__TOUCHABLE_OPACITY_VIEW);
@@ -162,6 +166,7 @@ public class TouchableOpacityImpl extends TouchablesGenericsImpl implements Touc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Button> getTouchableOpacityToButton() {
 		if (touchableOpacityToButton == null) {
 			touchableOpacityToButton = new EObjectContainmentEList<Button>(Button.class, this, ReactNativePackage.TOUCHABLE_OPACITY__TOUCHABLE_OPACITY_TO_BUTTON);

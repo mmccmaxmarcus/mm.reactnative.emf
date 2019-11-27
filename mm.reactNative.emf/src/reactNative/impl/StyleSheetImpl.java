@@ -132,6 +132,7 @@ public class StyleSheetImpl extends MinimalEObjectImpl.Container implements Styl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getNameStyle() {
 		return nameStyle;
 	}
@@ -141,6 +142,7 @@ public class StyleSheetImpl extends MinimalEObjectImpl.Container implements Styl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setNameStyle(String newNameStyle) {
 		String oldNameStyle = nameStyle;
 		nameStyle = newNameStyle;
@@ -153,6 +155,7 @@ public class StyleSheetImpl extends MinimalEObjectImpl.Container implements Styl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FlexBox getHasFlexbox() {
 		return hasFlexbox;
 	}
@@ -177,6 +180,7 @@ public class StyleSheetImpl extends MinimalEObjectImpl.Container implements Styl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setHasFlexbox(FlexBox newHasFlexbox) {
 		if (newHasFlexbox != hasFlexbox) {
 			NotificationChain msgs = null;
@@ -196,6 +200,7 @@ public class StyleSheetImpl extends MinimalEObjectImpl.Container implements Styl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Font getHasFont() {
 		return hasFont;
 	}
@@ -220,6 +225,7 @@ public class StyleSheetImpl extends MinimalEObjectImpl.Container implements Styl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setHasFont(Font newHasFont) {
 		if (newHasFont != hasFont) {
 			NotificationChain msgs = null;
@@ -239,6 +245,7 @@ public class StyleSheetImpl extends MinimalEObjectImpl.Container implements Styl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Margin getHasMargin() {
 		return hasMargin;
 	}
@@ -263,6 +270,7 @@ public class StyleSheetImpl extends MinimalEObjectImpl.Container implements Styl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setHasMargin(Margin newHasMargin) {
 		if (newHasMargin != hasMargin) {
 			NotificationChain msgs = null;
@@ -282,6 +290,7 @@ public class StyleSheetImpl extends MinimalEObjectImpl.Container implements Styl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Border getHasBorder() {
 		return hasBorder;
 	}
@@ -306,6 +315,7 @@ public class StyleSheetImpl extends MinimalEObjectImpl.Container implements Styl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setHasBorder(Border newHasBorder) {
 		if (newHasBorder != hasBorder) {
 			NotificationChain msgs = null;
@@ -325,6 +335,7 @@ public class StyleSheetImpl extends MinimalEObjectImpl.Container implements Styl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Padding getHasPadding() {
 		return hasPadding;
 	}
@@ -349,6 +360,7 @@ public class StyleSheetImpl extends MinimalEObjectImpl.Container implements Styl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setHasPadding(Padding newHasPadding) {
 		if (newHasPadding != hasPadding) {
 			NotificationChain msgs = null;

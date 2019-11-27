@@ -86,6 +86,7 @@ public class ReactNativeFactoryImpl extends EFactoryImpl implements ReactNativeF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public View createView() {
 		ViewImpl view = new ViewImpl();
 		return view;
@@ -96,6 +97,7 @@ public class ReactNativeFactoryImpl extends EFactoryImpl implements ReactNativeF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Text createText() {
 		TextImpl text = new TextImpl();
 		return text;
@@ -106,6 +108,7 @@ public class ReactNativeFactoryImpl extends EFactoryImpl implements ReactNativeF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FlatList createFlatList() {
 		FlatListImpl flatList = new FlatListImpl();
 		return flatList;
@@ -116,6 +119,7 @@ public class ReactNativeFactoryImpl extends EFactoryImpl implements ReactNativeF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Component createComponent() {
 		ComponentImpl component = new ComponentImpl();
 		return component;
@@ -126,6 +130,7 @@ public class ReactNativeFactoryImpl extends EFactoryImpl implements ReactNativeF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProjetoRN createProjetoRN() {
 		ProjetoRNImpl projetoRN = new ProjetoRNImpl();
 		return projetoRN;
@@ -136,6 +141,7 @@ public class ReactNativeFactoryImpl extends EFactoryImpl implements ReactNativeF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Image createImage() {
 		ImageImpl image = new ImageImpl();
 		return image;
@@ -146,6 +152,7 @@ public class ReactNativeFactoryImpl extends EFactoryImpl implements ReactNativeF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TouchableOpacity createTouchableOpacity() {
 		TouchableOpacityImpl touchableOpacity = new TouchableOpacityImpl();
 		return touchableOpacity;
@@ -156,6 +163,7 @@ public class ReactNativeFactoryImpl extends EFactoryImpl implements ReactNativeF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Icon createIcon() {
 		IconImpl icon = new IconImpl();
 		return icon;
@@ -166,6 +174,7 @@ public class ReactNativeFactoryImpl extends EFactoryImpl implements ReactNativeF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Button createButton() {
 		ButtonImpl button = new ButtonImpl();
 		return button;
@@ -176,6 +185,7 @@ public class ReactNativeFactoryImpl extends EFactoryImpl implements ReactNativeF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public StyleSheet createStyleSheet() {
 		StyleSheetImpl styleSheet = new StyleSheetImpl();
 		return styleSheet;
@@ -186,6 +196,7 @@ public class ReactNativeFactoryImpl extends EFactoryImpl implements ReactNativeF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FlexBox createFlexBox() {
 		FlexBoxImpl flexBox = new FlexBoxImpl();
 		return flexBox;
@@ -196,6 +207,7 @@ public class ReactNativeFactoryImpl extends EFactoryImpl implements ReactNativeF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Font createFont() {
 		FontImpl font = new FontImpl();
 		return font;
@@ -206,6 +218,7 @@ public class ReactNativeFactoryImpl extends EFactoryImpl implements ReactNativeF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SectionList createSectionList() {
 		SectionListImpl sectionList = new SectionListImpl();
 		return sectionList;
@@ -216,6 +229,7 @@ public class ReactNativeFactoryImpl extends EFactoryImpl implements ReactNativeF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Margin createMargin() {
 		MarginImpl margin = new MarginImpl();
 		return margin;
@@ -226,6 +240,7 @@ public class ReactNativeFactoryImpl extends EFactoryImpl implements ReactNativeF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Array createArray() {
 		ArrayImpl array = new ArrayImpl();
 		return array;
@@ -236,6 +251,7 @@ public class ReactNativeFactoryImpl extends EFactoryImpl implements ReactNativeF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ElementText createElementText() {
 		ElementTextImpl elementText = new ElementTextImpl();
 		return elementText;
@@ -246,6 +262,7 @@ public class ReactNativeFactoryImpl extends EFactoryImpl implements ReactNativeF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ElementImage createElementImage() {
 		ElementImageImpl elementImage = new ElementImageImpl();
 		return elementImage;
@@ -256,6 +273,7 @@ public class ReactNativeFactoryImpl extends EFactoryImpl implements ReactNativeF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ObjectElement createObjectElement() {
 		ObjectElementImpl objectElement = new ObjectElementImpl();
 		return objectElement;
@@ -266,6 +284,7 @@ public class ReactNativeFactoryImpl extends EFactoryImpl implements ReactNativeF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Border createBorder() {
 		BorderImpl border = new BorderImpl();
 		return border;
@@ -276,6 +295,7 @@ public class ReactNativeFactoryImpl extends EFactoryImpl implements ReactNativeF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Padding createPadding() {
 		PaddingImpl padding = new PaddingImpl();
 		return padding;
@@ -286,6 +306,7 @@ public class ReactNativeFactoryImpl extends EFactoryImpl implements ReactNativeF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReactNativePackage getReactNativePackage() {
 		return (ReactNativePackage)getEPackage();
 	}

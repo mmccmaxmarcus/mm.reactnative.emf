@@ -4,6 +4,9 @@
  */
 package reactNative.validation;
 
+import org.eclipse.emf.common.util.EList;
+import reactNative.Array;
+
 
 /**
  * A sample validator interface for {@link reactNative.ElementText}.
@@ -16,4 +19,6 @@ public interface ElementTextValidator {
 
 	boolean validateContentText(String value);
 	boolean validateValueText(String value);
+
+	boolean validateElementTextToArray(EList<Array> value);
 }

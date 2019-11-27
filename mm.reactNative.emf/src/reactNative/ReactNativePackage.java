@@ -1209,13 +1209,22 @@ public interface ReactNativePackage extends EPackage {
 	int ELEMENT_TEXT__VALUE_TEXT = 1;
 
 	/**
+	 * The feature id for the '<em><b>Element Text To Array</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT_TEXT__ELEMENT_TEXT_TO_ARRAY = 2;
+
+	/**
 	 * The number of structural features of the '<em>Element Text</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ELEMENT_TEXT_FEATURE_COUNT = 2;
+	int ELEMENT_TEXT_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Element Text</em>' class.
@@ -2470,6 +2479,17 @@ public interface ReactNativePackage extends EPackage {
 	EAttribute getElementText_ValueText();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link reactNative.ElementText#getElementTextToArray <em>Element Text To Array</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Element Text To Array</em>'.
+	 * @see reactNative.ElementText#getElementTextToArray()
+	 * @see #getElementText()
+	 * @generated
+	 */
+	EReference getElementText_ElementTextToArray();
+
+	/**
 	 * Returns the meta object for class '{@link reactNative.ElementImage <em>Element Image</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3466,6 +3486,14 @@ public interface ReactNativePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ELEMENT_TEXT__VALUE_TEXT = eINSTANCE.getElementText_ValueText();
+
+		/**
+		 * The meta object literal for the '<em><b>Element Text To Array</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ELEMENT_TEXT__ELEMENT_TEXT_TO_ARRAY = eINSTANCE.getElementText_ElementTextToArray();
 
 		/**
 		 * The meta object literal for the '{@link reactNative.impl.ElementImageImpl <em>Element Image</em>}' class.

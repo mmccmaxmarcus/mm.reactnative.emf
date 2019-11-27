@@ -259,6 +259,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getView() {
 		return viewEClass;
 	}
@@ -268,6 +269,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getView_HasText() {
 		return (EReference)viewEClass.getEStructuralFeatures().get(0);
 	}
@@ -277,6 +279,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getView_ViewToflatlists() {
 		return (EReference)viewEClass.getEStructuralFeatures().get(1);
 	}
@@ -286,6 +289,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getView_ViewType() {
 		return (EAttribute)viewEClass.getEStructuralFeatures().get(2);
 	}
@@ -295,6 +299,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getView_ViewName() {
 		return (EAttribute)viewEClass.getEStructuralFeatures().get(3);
 	}
@@ -304,6 +309,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getView_HasImage() {
 		return (EReference)viewEClass.getEStructuralFeatures().get(4);
 	}
@@ -313,6 +319,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getView_ViewToTouchableOpacity() {
 		return (EReference)viewEClass.getEStructuralFeatures().get(5);
 	}
@@ -322,6 +329,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getView_ViewToIcon() {
 		return (EReference)viewEClass.getEStructuralFeatures().get(6);
 	}
@@ -331,6 +339,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getView_ViewToButton() {
 		return (EReference)viewEClass.getEStructuralFeatures().get(7);
 	}
@@ -340,6 +349,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getView_SubView() {
 		return (EReference)viewEClass.getEStructuralFeatures().get(8);
 	}
@@ -349,6 +359,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getView_ViewToStyleSheet() {
 		return (EReference)viewEClass.getEStructuralFeatures().get(9);
 	}
@@ -358,6 +369,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getView_ViewToSectionList() {
 		return (EReference)viewEClass.getEStructuralFeatures().get(10);
 	}
@@ -367,6 +379,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EOperation getView__Style__StyleSheet() {
 		return viewEClass.getEOperations().get(0);
 	}
@@ -376,6 +389,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getText() {
 		return textEClass;
 	}
@@ -385,6 +399,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getText_ContentText() {
 		return (EAttribute)textEClass.getEStructuralFeatures().get(0);
 	}
@@ -394,6 +409,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getText_Color() {
 		return (EAttribute)textEClass.getEStructuralFeatures().get(1);
 	}
@@ -403,6 +419,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getText_FontSize() {
 		return (EAttribute)textEClass.getEStructuralFeatures().get(2);
 	}
@@ -412,6 +429,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getText_TextAlign() {
 		return (EAttribute)textEClass.getEStructuralFeatures().get(3);
 	}
@@ -421,6 +439,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getText_Name() {
 		return (EAttribute)textEClass.getEStructuralFeatures().get(4);
 	}
@@ -430,6 +449,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getText_TextToStylesheet() {
 		return (EReference)textEClass.getEStructuralFeatures().get(5);
 	}
@@ -439,6 +459,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFlatList() {
 		return flatListEClass;
 	}
@@ -448,6 +469,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFlatList_HasViews() {
 		return (EReference)flatListEClass.getEStructuralFeatures().get(0);
 	}
@@ -457,6 +479,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFlatList_FlatlistName() {
 		return (EAttribute)flatListEClass.getEStructuralFeatures().get(1);
 	}
@@ -466,6 +489,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFlatList_Data() {
 		return (EAttribute)flatListEClass.getEStructuralFeatures().get(2);
 	}
@@ -475,6 +499,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFlatList_RenderItem() {
 		return (EAttribute)flatListEClass.getEStructuralFeatures().get(3);
 	}
@@ -484,6 +509,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFlatList_KeyExtractor() {
 		return (EAttribute)flatListEClass.getEStructuralFeatures().get(4);
 	}
@@ -493,6 +519,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFlatList_FlatListToArray() {
 		return (EReference)flatListEClass.getEStructuralFeatures().get(5);
 	}
@@ -502,6 +529,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getComponent() {
 		return componentEClass;
 	}
@@ -511,6 +539,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getComponent_ComponentTotext() {
 		return (EReference)componentEClass.getEStructuralFeatures().get(0);
 	}
@@ -520,6 +549,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getComponent_ComponentName() {
 		return (EAttribute)componentEClass.getEStructuralFeatures().get(1);
 	}
@@ -529,6 +559,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getComponent_ComponentToView() {
 		return (EReference)componentEClass.getEStructuralFeatures().get(2);
 	}
@@ -538,6 +569,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getComponent_State() {
 		return (EAttribute)componentEClass.getEStructuralFeatures().get(3);
 	}
@@ -547,6 +579,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getComponent_ComponentToTouchableOpacity() {
 		return (EReference)componentEClass.getEStructuralFeatures().get(4);
 	}
@@ -556,6 +589,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getProjetoRN() {
 		return projetoRNEClass;
 	}
@@ -565,6 +599,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getProjetoRN_Name() {
 		return (EAttribute)projetoRNEClass.getEStructuralFeatures().get(0);
 	}
@@ -574,6 +609,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getProjetoRN_Components() {
 		return (EReference)projetoRNEClass.getEStructuralFeatures().get(1);
 	}
@@ -583,6 +619,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getImage() {
 		return imageEClass;
 	}
@@ -592,6 +629,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getImage_Name() {
 		return (EAttribute)imageEClass.getEStructuralFeatures().get(0);
 	}
@@ -601,6 +639,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getImage_Source() {
 		return (EAttribute)imageEClass.getEStructuralFeatures().get(1);
 	}
@@ -610,6 +649,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getImage_ImageTostylesheet() {
 		return (EReference)imageEClass.getEStructuralFeatures().get(2);
 	}
@@ -619,6 +659,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTouchableOpacity() {
 		return touchableOpacityEClass;
 	}
@@ -628,6 +669,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTouchableOpacity_TouchableOpacityToIcon() {
 		return (EReference)touchableOpacityEClass.getEStructuralFeatures().get(0);
 	}
@@ -637,6 +679,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTouchableOpacity_TouchableOpacityToImage() {
 		return (EReference)touchableOpacityEClass.getEStructuralFeatures().get(1);
 	}
@@ -646,6 +689,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTouchableOpacity_TouchableOpacityToText() {
 		return (EReference)touchableOpacityEClass.getEStructuralFeatures().get(2);
 	}
@@ -655,6 +699,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTouchableOpacity_TouchableOpacityView() {
 		return (EReference)touchableOpacityEClass.getEStructuralFeatures().get(3);
 	}
@@ -664,6 +709,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTouchableOpacity_TouchableOpacityToButton() {
 		return (EReference)touchableOpacityEClass.getEStructuralFeatures().get(4);
 	}
@@ -673,6 +719,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getIcon() {
 		return iconEClass;
 	}
@@ -682,6 +729,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getIcon_Style() {
 		return (EAttribute)iconEClass.getEStructuralFeatures().get(0);
 	}
@@ -691,6 +739,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getIcon_Name() {
 		return (EAttribute)iconEClass.getEStructuralFeatures().get(1);
 	}
@@ -700,6 +749,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getIcon_Size() {
 		return (EAttribute)iconEClass.getEStructuralFeatures().get(2);
 	}
@@ -709,6 +759,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getIcon_Color() {
 		return (EAttribute)iconEClass.getEStructuralFeatures().get(3);
 	}
@@ -718,6 +769,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getIcon_IconToStylesheet() {
 		return (EReference)iconEClass.getEStructuralFeatures().get(4);
 	}
@@ -727,6 +779,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTouchablesGenerics() {
 		return touchablesGenericsEClass;
 	}
@@ -736,6 +789,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTouchablesGenerics_OnPress() {
 		return (EAttribute)touchablesGenericsEClass.getEStructuralFeatures().get(0);
 	}
@@ -745,6 +799,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getButton() {
 		return buttonEClass;
 	}
@@ -754,6 +809,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getButton_Title() {
 		return (EAttribute)buttonEClass.getEStructuralFeatures().get(0);
 	}
@@ -763,6 +819,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getButton_Color() {
 		return (EAttribute)buttonEClass.getEStructuralFeatures().get(1);
 	}
@@ -772,6 +829,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getButton_Disabled() {
 		return (EAttribute)buttonEClass.getEStructuralFeatures().get(2);
 	}
@@ -781,6 +839,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getStyleSheet() {
 		return styleSheetEClass;
 	}
@@ -790,6 +849,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getStyleSheet_NameStyle() {
 		return (EAttribute)styleSheetEClass.getEStructuralFeatures().get(0);
 	}
@@ -799,6 +859,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getStyleSheet_HasFlexbox() {
 		return (EReference)styleSheetEClass.getEStructuralFeatures().get(1);
 	}
@@ -808,6 +869,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getStyleSheet_HasFont() {
 		return (EReference)styleSheetEClass.getEStructuralFeatures().get(2);
 	}
@@ -817,6 +879,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getStyleSheet_HasMargin() {
 		return (EReference)styleSheetEClass.getEStructuralFeatures().get(3);
 	}
@@ -826,6 +889,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getStyleSheet_HasBorder() {
 		return (EReference)styleSheetEClass.getEStructuralFeatures().get(4);
 	}
@@ -835,6 +899,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getStyleSheet_HasPadding() {
 		return (EReference)styleSheetEClass.getEStructuralFeatures().get(5);
 	}
@@ -844,6 +909,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFlexBox() {
 		return flexBoxEClass;
 	}
@@ -853,6 +919,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFlexBox_Flex() {
 		return (EAttribute)flexBoxEClass.getEStructuralFeatures().get(0);
 	}
@@ -862,6 +929,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFlexBox_FlexDirection() {
 		return (EAttribute)flexBoxEClass.getEStructuralFeatures().get(1);
 	}
@@ -871,6 +939,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFlexBox_JustifyContent() {
 		return (EAttribute)flexBoxEClass.getEStructuralFeatures().get(2);
 	}
@@ -880,6 +949,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFlexBox_AlignItems() {
 		return (EAttribute)flexBoxEClass.getEStructuralFeatures().get(3);
 	}
@@ -889,6 +959,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFont() {
 		return fontEClass;
 	}
@@ -898,6 +969,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFont_FontSize() {
 		return (EAttribute)fontEClass.getEStructuralFeatures().get(0);
 	}
@@ -907,6 +979,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFont_FontFamily() {
 		return (EAttribute)fontEClass.getEStructuralFeatures().get(1);
 	}
@@ -916,6 +989,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFont_FontWeight() {
 		return (EAttribute)fontEClass.getEStructuralFeatures().get(2);
 	}
@@ -925,6 +999,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getSectionList() {
 		return sectionListEClass;
 	}
@@ -934,6 +1009,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getSectionList_SectionListName() {
 		return (EAttribute)sectionListEClass.getEStructuralFeatures().get(0);
 	}
@@ -943,6 +1019,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getSectionList_Sections() {
 		return (EAttribute)sectionListEClass.getEStructuralFeatures().get(1);
 	}
@@ -952,6 +1029,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getSectionList_KeyExtractor() {
 		return (EAttribute)sectionListEClass.getEStructuralFeatures().get(2);
 	}
@@ -961,6 +1039,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getSectionList_RenderSectionHeader() {
 		return (EAttribute)sectionListEClass.getEStructuralFeatures().get(3);
 	}
@@ -970,6 +1049,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getSectionList_RenderItem() {
 		return (EAttribute)sectionListEClass.getEStructuralFeatures().get(4);
 	}
@@ -979,6 +1059,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getSectionList_SectionListToArray() {
 		return (EReference)sectionListEClass.getEStructuralFeatures().get(5);
 	}
@@ -988,6 +1069,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getMargin() {
 		return marginEClass;
 	}
@@ -997,6 +1079,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getMargin_MarginTop() {
 		return (EAttribute)marginEClass.getEStructuralFeatures().get(0);
 	}
@@ -1006,6 +1089,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getMargin_MarginBottom() {
 		return (EAttribute)marginEClass.getEStructuralFeatures().get(1);
 	}
@@ -1015,6 +1099,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getMargin_Margin() {
 		return (EAttribute)marginEClass.getEStructuralFeatures().get(2);
 	}
@@ -1024,6 +1109,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getArray() {
 		return arrayEClass;
 	}
@@ -1033,6 +1119,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getArray_Value() {
 		return (EAttribute)arrayEClass.getEStructuralFeatures().get(0);
 	}
@@ -1042,6 +1129,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getArray_SubArray() {
 		return (EReference)arrayEClass.getEStructuralFeatures().get(1);
 	}
@@ -1051,6 +1139,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getArray_ArrayToObjects() {
 		return (EReference)arrayEClass.getEStructuralFeatures().get(2);
 	}
@@ -1060,6 +1149,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getElementText() {
 		return elementTextEClass;
 	}
@@ -1069,6 +1159,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getElementText_ContentText() {
 		return (EAttribute)elementTextEClass.getEStructuralFeatures().get(0);
 	}
@@ -1078,6 +1169,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getElementText_ValueText() {
 		return (EAttribute)elementTextEClass.getEStructuralFeatures().get(1);
 	}
@@ -1087,6 +1179,17 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public EReference getElementText_ElementTextToArray() {
+		return (EReference)elementTextEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getElementImage() {
 		return elementImageEClass;
 	}
@@ -1096,6 +1199,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getElementImage_ContentImage() {
 		return (EAttribute)elementImageEClass.getEStructuralFeatures().get(0);
 	}
@@ -1105,6 +1209,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getElementImage_ValueImage() {
 		return (EAttribute)elementImageEClass.getEStructuralFeatures().get(1);
 	}
@@ -1114,6 +1219,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getElementImage_ElementImageToArray() {
 		return (EReference)elementImageEClass.getEStructuralFeatures().get(2);
 	}
@@ -1123,6 +1229,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getObjectElement() {
 		return objectElementEClass;
 	}
@@ -1132,6 +1239,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getObjectElement_ElementText() {
 		return (EReference)objectElementEClass.getEStructuralFeatures().get(0);
 	}
@@ -1141,6 +1249,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getObjectElement_ElementImage() {
 		return (EReference)objectElementEClass.getEStructuralFeatures().get(1);
 	}
@@ -1150,6 +1259,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getObjectElement_SubObjects() {
 		return (EReference)objectElementEClass.getEStructuralFeatures().get(2);
 	}
@@ -1159,6 +1269,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getObjectElement_ObjectToArray() {
 		return (EReference)objectElementEClass.getEStructuralFeatures().get(3);
 	}
@@ -1168,6 +1279,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getObjectElement_Id() {
 		return (EAttribute)objectElementEClass.getEStructuralFeatures().get(4);
 	}
@@ -1177,6 +1289,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getBorder() {
 		return borderEClass;
 	}
@@ -1186,6 +1299,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getBorder_BorderBottomRightRadius() {
 		return (EAttribute)borderEClass.getEStructuralFeatures().get(0);
 	}
@@ -1195,6 +1309,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getBorder_BorderColor() {
 		return (EAttribute)borderEClass.getEStructuralFeatures().get(1);
 	}
@@ -1204,6 +1319,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getBorder_BorderRadius() {
 		return (EAttribute)borderEClass.getEStructuralFeatures().get(2);
 	}
@@ -1213,6 +1329,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getBorder_BorderWidth() {
 		return (EAttribute)borderEClass.getEStructuralFeatures().get(3);
 	}
@@ -1222,6 +1339,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPadding() {
 		return paddingEClass;
 	}
@@ -1231,6 +1349,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPadding_Padding() {
 		return (EAttribute)paddingEClass.getEStructuralFeatures().get(0);
 	}
@@ -1240,6 +1359,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPadding_PaddingHorizontal() {
 		return (EAttribute)paddingEClass.getEStructuralFeatures().get(1);
 	}
@@ -1249,6 +1369,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPadding_PaddingVertical() {
 		return (EAttribute)paddingEClass.getEStructuralFeatures().get(2);
 	}
@@ -1258,6 +1379,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReactNativeFactory getReactNativeFactory() {
 		return (ReactNativeFactory)getEFactoryInstance();
 	}
@@ -1389,6 +1511,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 		elementTextEClass = createEClass(ELEMENT_TEXT);
 		createEAttribute(elementTextEClass, ELEMENT_TEXT__CONTENT_TEXT);
 		createEAttribute(elementTextEClass, ELEMENT_TEXT__VALUE_TEXT);
+		createEReference(elementTextEClass, ELEMENT_TEXT__ELEMENT_TEXT_TO_ARRAY);
 
 		elementImageEClass = createEClass(ELEMENT_IMAGE);
 		createEAttribute(elementImageEClass, ELEMENT_IMAGE__CONTENT_IMAGE);
@@ -1559,6 +1682,7 @@ public class ReactNativePackageImpl extends EPackageImpl implements ReactNativeP
 		initEClass(elementTextEClass, ElementText.class, "ElementText", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getElementText_ContentText(), ecorePackage.getEString(), "contentText", null, 0, 1, ElementText.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getElementText_ValueText(), ecorePackage.getEString(), "valueText", null, 0, 1, ElementText.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getElementText_ElementTextToArray(), this.getArray(), null, "elementTextToArray", null, 0, -1, ElementText.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(elementImageEClass, ElementImage.class, "ElementImage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getElementImage_ContentImage(), theXMLTypePackage.getString(), "contentImage", null, 0, 1, ElementImage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

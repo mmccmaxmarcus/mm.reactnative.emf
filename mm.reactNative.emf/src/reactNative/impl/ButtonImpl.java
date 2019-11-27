@@ -111,6 +111,7 @@ public class ButtonImpl extends TouchablesGenericsImpl implements Button {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getTitle() {
 		return title;
 	}
@@ -120,6 +121,7 @@ public class ButtonImpl extends TouchablesGenericsImpl implements Button {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTitle(String newTitle) {
 		String oldTitle = title;
 		title = newTitle;
@@ -132,6 +134,7 @@ public class ButtonImpl extends TouchablesGenericsImpl implements Button {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getColor() {
 		return color;
 	}
@@ -141,6 +144,7 @@ public class ButtonImpl extends TouchablesGenericsImpl implements Button {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setColor(String newColor) {
 		String oldColor = color;
 		color = newColor;
@@ -153,6 +157,7 @@ public class ButtonImpl extends TouchablesGenericsImpl implements Button {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isDisabled() {
 		return disabled;
 	}
@@ -162,6 +167,7 @@ public class ButtonImpl extends TouchablesGenericsImpl implements Button {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDisabled(boolean newDisabled) {
 		boolean oldDisabled = disabled;
 		disabled = newDisabled;

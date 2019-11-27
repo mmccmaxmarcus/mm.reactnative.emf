@@ -2,6 +2,7 @@
  */
 package reactNative;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -15,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link reactNative.ElementText#getContentText <em>Content Text</em>}</li>
  *   <li>{@link reactNative.ElementText#getValueText <em>Value Text</em>}</li>
+ *   <li>{@link reactNative.ElementText#getElementTextToArray <em>Element Text To Array</em>}</li>
  * </ul>
  *
  * @see reactNative.ReactNativePackage#getElementText()
@@ -73,5 +75,17 @@ public interface ElementText extends EObject {
 	 * @generated
 	 */
 	void setValueText(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Element Text To Array</b></em>' containment reference list.
+	 * The list contents are of type {@link reactNative.Array}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Element Text To Array</em>' containment reference list.
+	 * @see reactNative.ReactNativePackage#getElementText_ElementTextToArray()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Array> getElementTextToArray();
 
 } // ElementText

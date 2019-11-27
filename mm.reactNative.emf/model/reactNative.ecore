@@ -146,6 +146,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ElementText">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="contentText" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="valueText" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elementTextToArray" upperBound="-1"
+        eType="#//Array" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ElementImage">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="contentImage" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>

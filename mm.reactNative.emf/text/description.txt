@@ -115,6 +115,7 @@ Package reactNative <http://www.example.org/reactNative>
   Class ElementText
     Attribute contentText : EString
     Attribute valueText : EString
+    Reference elementTextToArray : Array<<0..*>>
 
   Class ElementImage
     Attribute contentImage : String

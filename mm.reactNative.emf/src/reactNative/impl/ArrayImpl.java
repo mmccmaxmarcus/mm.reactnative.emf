@@ -102,6 +102,7 @@ public class ArrayImpl extends MinimalEObjectImpl.Container implements Array {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getValue() {
 		return value;
 	}
@@ -111,6 +112,7 @@ public class ArrayImpl extends MinimalEObjectImpl.Container implements Array {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setValue(String newValue) {
 		String oldValue = value;
 		value = newValue;
@@ -123,6 +125,7 @@ public class ArrayImpl extends MinimalEObjectImpl.Container implements Array {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Array> getSubArray() {
 		if (subArray == null) {
 			subArray = new EObjectContainmentEList<Array>(Array.class, this, ReactNativePackage.ARRAY__SUB_ARRAY);
@@ -135,6 +138,7 @@ public class ArrayImpl extends MinimalEObjectImpl.Container implements Array {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ObjectElement> getArrayToObjects() {
 		if (arrayToObjects == null) {
 			arrayToObjects = new EObjectContainmentEList<ObjectElement>(ObjectElement.class, this, ReactNativePackage.ARRAY__ARRAY_TO_OBJECTS);

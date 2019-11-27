@@ -31,7 +31,7 @@ public class SemEstado extends ComponetsReactNative {
 		this.component = component;
 	}
 
-	public StringBuilder cabeçalho() {
+	public StringBuilder cabecalho() {
 		js.append("import React from \'react\' " + ql);
 		js.append("import {Text, FlatList, StyleSheet, View} from \'react-native\'" + ql);
 		js.append(String.format("export default props => { \n"));

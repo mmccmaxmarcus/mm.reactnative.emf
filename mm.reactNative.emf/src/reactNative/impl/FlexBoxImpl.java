@@ -133,6 +133,7 @@ public class FlexBoxImpl extends MinimalEObjectImpl.Container implements FlexBox
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Integer getFlex() {
 		return flex;
 	}
@@ -142,6 +143,7 @@ public class FlexBoxImpl extends MinimalEObjectImpl.Container implements FlexBox
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFlex(Integer newFlex) {
 		Integer oldFlex = flex;
 		flex = newFlex;
@@ -154,6 +156,7 @@ public class FlexBoxImpl extends MinimalEObjectImpl.Container implements FlexBox
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getFlexDirection() {
 		return flexDirection;
 	}
@@ -163,6 +166,7 @@ public class FlexBoxImpl extends MinimalEObjectImpl.Container implements FlexBox
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFlexDirection(String newFlexDirection) {
 		String oldFlexDirection = flexDirection;
 		flexDirection = newFlexDirection;
@@ -175,6 +179,7 @@ public class FlexBoxImpl extends MinimalEObjectImpl.Container implements FlexBox
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getJustifyContent() {
 		return justifyContent;
 	}
@@ -184,6 +189,7 @@ public class FlexBoxImpl extends MinimalEObjectImpl.Container implements FlexBox
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setJustifyContent(String newJustifyContent) {
 		String oldJustifyContent = justifyContent;
 		justifyContent = newJustifyContent;
@@ -196,6 +202,7 @@ public class FlexBoxImpl extends MinimalEObjectImpl.Container implements FlexBox
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getAlignItems() {
 		return alignItems;
 	}
@@ -205,6 +212,7 @@ public class FlexBoxImpl extends MinimalEObjectImpl.Container implements FlexBox
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAlignItems(String newAlignItems) {
 		String oldAlignItems = alignItems;
 		alignItems = newAlignItems;

@@ -116,6 +116,7 @@
     <genClasses ecoreClass="reactNative.ecore#//ElementText">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//ElementText/contentText"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//ElementText/valueText"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reactNative.ecore#//ElementText/elementTextToArray"/>
     </genClasses>
     <genClasses ecoreClass="reactNative.ecore#//ElementImage">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reactNative.ecore#//ElementImage/contentImage"/>

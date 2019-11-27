@@ -133,6 +133,7 @@ public class BorderImpl extends MinimalEObjectImpl.Container implements Border {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getBorderBottomRightRadius() {
 		return borderBottomRightRadius;
 	}
@@ -142,6 +143,7 @@ public class BorderImpl extends MinimalEObjectImpl.Container implements Border {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setBorderBottomRightRadius(String newBorderBottomRightRadius) {
 		String oldBorderBottomRightRadius = borderBottomRightRadius;
 		borderBottomRightRadius = newBorderBottomRightRadius;
@@ -154,6 +156,7 @@ public class BorderImpl extends MinimalEObjectImpl.Container implements Border {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getBorderColor() {
 		return borderColor;
 	}
@@ -163,6 +166,7 @@ public class BorderImpl extends MinimalEObjectImpl.Container implements Border {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setBorderColor(String newBorderColor) {
 		String oldBorderColor = borderColor;
 		borderColor = newBorderColor;
@@ -175,6 +179,7 @@ public class BorderImpl extends MinimalEObjectImpl.Container implements Border {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getBorderRadius() {
 		return borderRadius;
 	}
@@ -184,6 +189,7 @@ public class BorderImpl extends MinimalEObjectImpl.Container implements Border {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setBorderRadius(String newBorderRadius) {
 		String oldBorderRadius = borderRadius;
 		borderRadius = newBorderRadius;
@@ -196,6 +202,7 @@ public class BorderImpl extends MinimalEObjectImpl.Container implements Border {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getBorderWidth() {
 		return borderWidth;
 	}
@@ -205,6 +212,7 @@ public class BorderImpl extends MinimalEObjectImpl.Container implements Border {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setBorderWidth(String newBorderWidth) {
 		String oldBorderWidth = borderWidth;
 		borderWidth = newBorderWidth;

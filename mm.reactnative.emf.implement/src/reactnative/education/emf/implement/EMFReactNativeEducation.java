@@ -15,6 +15,11 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 
+import mm.mobileLearning.emf.implement.MobileLearningToReact;
+import mmMobileLearning.MKnowledgeDomain;
+import mmMobileLearning.MmMobileLearningFactory;
+import mmMobileLearning.MmMobileLearningPackage;
+import reactNative.Component;
 import reactNative.FlatList;
 import reactNative.ProjetoRN;
 import reactNative.ReactNativeFactory;
@@ -24,22 +29,43 @@ import reactNative.View;
 public class EMFReactNativeEducation {
 	static ReactNativeFactory reactNativeFactory = ReactNativeFactory.eINSTANCE;
 	static ReactNativePackage reactNativePackage = ReactNativePackage.eINSTANCE;
+	
+	static MmMobileLearningFactory mobileLearningFactory = MmMobileLearningFactory.eINSTANCE;
+	static MmMobileLearningPackage mobileLearningPackage = MmMobileLearningPackage.eINSTANCE;
+	
 	static View view = reactNativeFactory.createView();
 	static FlatList flatList = reactNativeFactory.createFlatList();
 	// static Component component = reactNativeFactory.createComponent();
 	static ProjetoRN projetoRN = reactNativeFactory.createProjetoRN();
+	
+	static MKnowledgeDomain mKnowledgeDomain = mobileLearningFactory.createMKnowledgeDomain();
+	
+	static Component component = reactNativeFactory.createComponent();
+	
+	
+	
+	
+	
 	static StringBuilder js;
 	static String ql = "\n";
 	static int id = 0;
 	static boolean myheader;
 
 	public static void main(String[] args) {
-		String loadFile = "/home/max/Área de Trabalho/modelos/react.reactnative";
-		
-		projetoRN = loadModel(loadFile);	
-		String pathSaveFile = "/home/max/diagram/mm.reactnative.emf.implement/src/js/";
-		
+		String loadFileMmReactNative = "C:\\Users\\MAX-PC\\Desktop\\Modelos\\mmEmf.reactnative";
+		String loadFileMmMobile = "C:\\Users\\MAX-PC\\Desktop\\Modelos\\ProjectManagementEN(1).mmMobileLearning";
+		mKnowledgeDomain = loadModelMobile(loadFileMmMobile);
 
+		MobileLearningToReact learningToReact = new MobileLearningToReact(mKnowledgeDomain);
+		ProjetoRN projetoRNResult = learningToReact.projectReact();
+		saveReactnativeModel(projetoRNResult, loadFileMmReactNative);
+		
+		
+		projetoRN = loadModelReactnative(loadFileMmReactNative);
+		
+		String pathSaveFile = "C:\\Users\\MAX-PC\\Desktop\\git\\mmreactnative\\mm.reactnative.emf\\mm.reactnative.emf.implement\\src\\js\\";
+		
+		
 		projetoRN.getComponents().forEach(components -> {
 			String nameArqJS = components.getComponentName();
 			String saveFile = pathSaveFile + nameArqJS + ".js";
@@ -54,7 +80,7 @@ public class EMFReactNativeEducation {
 			if (!components.isState()) {
 				js = new StringBuilder();
 				SemEstado semEstado = new SemEstado(js, components);
-			    js = semEstado.cabeçalho();
+			    js = semEstado.cabecalho();
 			    js = semEstado.returnReact();
 			    
 			    includeFileJS.print(js);
@@ -83,71 +109,12 @@ public class EMFReactNativeEducation {
 				System.out.println(js.toString());
 			}
 		
-		//	js.append("import React from \'react\' " + ql);
-		//	js.append("import {Text, FlatList, StyleSheet, View} from \'react-native\'" + ql);
-		//	js.append(String.format("const %s = props => { %s ", nameArqJS, ql));
-/*
-			components.getComponentToView().forEach(views -> {
-				views.getViewToflatlists().forEach(flatlists -> {
-
-					if (!flatlists.getFlatListText().isEmpty()) {
-						js.append("\t const data = [ " + ql);
-					}
-					flatlists.getFlatListText().forEach(texts -> {
-						js.append(String.format("\t\t{id: %d, texto: '%s'}, %s", id++, texts.getContentText(), ql));
-					});
-					id = 0;
-					js.append("\t ]," + ql);
-				});
-			});
-
-			js.append("\t return( " + ql);
-			js.append("\t\t<View>" + ql);
-
-			components.getComponentToView().forEach(views -> {
-				js.append("\t\t\t<View>" + ql);
-				js.append("\t\t\t\t<View>" + ql);
-				js.append(String.format("\t\t\t\t\t <%s navigation={props.navigation} title='%s'/>%s",
-					projetoRN.getComponents().get(1).getComponentName(),
-				projetoRN.getComponents().get(1).getComponentName(), ql));
-				js.append("\t\t\t\t</View>" + ql);
-
-				views.getHasText().forEach(texts -> {
-					js.append(String.format("\t\t\t\t <Text> %s </Text> %s", texts.getContentText(), ql));
-				});
-
-				views.getViewToflatlists().forEach(flatLists -> {
-					js.append("\t\t\t\t <FlatList>" + ql);
-					js.append("\t\t\t\t\t data={data} KeyExtractor={(item) => item.id.toString()}" + ql);
-					js.append(String.format(
-							"\t\t\t\t\t renderItem = {({item}) => (<View><Text>{item.texto}</Text> </View>)} %s", ql));
-					js.append("\t\t\t\t <FlatList>" + ql);
-
-				});
-				js.append("\t\t\t</View>" + ql);
-
-			});
-			js.append("\t\t</View>" + ql);
-			js.append("}"+ ql);
-			js.append(String.format("export default %s", nameArqJS));
-			
-			
-			
-
-
-			includeFileJS.print(js);
-
-			try {
-				saveFileJS.close();
-			} catch (IOException e2) {
-				e2.printStackTrace();
-			}
-*/
+	
 		});
 
 	}
 	
-	private static ProjetoRN loadModel(String loadFile) {
+	private static ProjetoRN loadModelReactnative(String loadFile) {
 		ProjetoRN projetoRN = reactNativeFactory.createProjetoRN();
 
 		ResourceSet resourceSet = new ResourceSetImpl();
@@ -155,7 +122,7 @@ public class EMFReactNativeEducation {
 		resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("reactnative",
 				new XMIResourceFactoryImpl());
 
-		URI fileURI = URI.createURI(loadFile);
+		URI fileURI = URI.createFileURI(loadFile);
 
 		Resource resource = resourceSet.getResource(fileURI, true);
 
@@ -170,5 +137,61 @@ public class EMFReactNativeEducation {
 			System.out.println("failed to read " + fileURI);
 		}
 		return null;
+	}
+	
+	private static MKnowledgeDomain loadModelMobile(String loadFile) {
+		MKnowledgeDomain mKnowledgeDomain = mobileLearningFactory.createMKnowledgeDomain();
+
+		ResourceSet resourceSet = new ResourceSetImpl();
+
+		resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("mmMobileLearning",
+				new XMIResourceFactoryImpl());
+
+		URI fileURI = URI.createFileURI(loadFile);
+
+		Resource resource = resourceSet.getResource(fileURI, true);
+
+		try {
+			resource.load(null);
+			mKnowledgeDomain = (MKnowledgeDomain) resource.getContents().get(0);
+			// component = (Component) resource.getContents().get(0);
+			System.out.println("loaded: " + mKnowledgeDomain);
+			// resource.save(System.out, Collections.EMPTY_MAP);
+			return mKnowledgeDomain;
+		} catch (IOException e) {
+			System.out.println("failed to read " + fileURI);
+		}
+		return null;
+	}
+	
+	public static void saveReactnativeModel(ProjetoRN projetoRN, String arquivo) {
+
+		ProjetoRN project = reactNativeFactory.createProjetoRN();
+
+		project = projetoRN;
+
+		// Obtendo novo resource set
+
+		ResourceSet resSet = new ResourceSetImpl();
+		resSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("reactnative",
+				new XMIResourceFactoryImpl());
+		// arquivo = arquivo+"xmi";
+		// Create resource
+
+		System.out.println("Path: " + arquivo);
+		URI fileURI = URI.createFileURI(arquivo);
+		// URI.decode("UTF-8");
+		Resource resource = resSet.createResource(fileURI);
+		resource.getContents().add(project);
+
+		try {
+			resource.save(null);
+			System.out.println("Salvo...");
+
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			System.out.println("erro salvar modelo no modelo react...");
+			e.printStackTrace();
+		}
 	}
 }

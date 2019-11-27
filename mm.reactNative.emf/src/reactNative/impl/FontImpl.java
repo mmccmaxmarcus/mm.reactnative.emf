@@ -112,6 +112,7 @@ public class FontImpl extends MinimalEObjectImpl.Container implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getFontSize() {
 		return fontSize;
 	}
@@ -121,6 +122,7 @@ public class FontImpl extends MinimalEObjectImpl.Container implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFontSize(String newFontSize) {
 		String oldFontSize = fontSize;
 		fontSize = newFontSize;
@@ -133,6 +135,7 @@ public class FontImpl extends MinimalEObjectImpl.Container implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getFontFamily() {
 		return fontFamily;
 	}
@@ -142,6 +145,7 @@ public class FontImpl extends MinimalEObjectImpl.Container implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFontFamily(String newFontFamily) {
 		String oldFontFamily = fontFamily;
 		fontFamily = newFontFamily;
@@ -154,6 +158,7 @@ public class FontImpl extends MinimalEObjectImpl.Container implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getFontWeight() {
 		return fontWeight;
 	}
@@ -163,6 +168,7 @@ public class FontImpl extends MinimalEObjectImpl.Container implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFontWeight(String newFontWeight) {
 		String oldFontWeight = fontWeight;
 		fontWeight = newFontWeight;

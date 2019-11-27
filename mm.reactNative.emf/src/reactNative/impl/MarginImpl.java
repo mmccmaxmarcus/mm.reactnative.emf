@@ -112,6 +112,7 @@ public class MarginImpl extends MinimalEObjectImpl.Container implements Margin {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getMarginTop() {
 		return marginTop;
 	}
@@ -121,6 +122,7 @@ public class MarginImpl extends MinimalEObjectImpl.Container implements Margin {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setMarginTop(String newMarginTop) {
 		String oldMarginTop = marginTop;
 		marginTop = newMarginTop;
@@ -133,6 +135,7 @@ public class MarginImpl extends MinimalEObjectImpl.Container implements Margin {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getMarginBottom() {
 		return marginBottom;
 	}
@@ -142,6 +145,7 @@ public class MarginImpl extends MinimalEObjectImpl.Container implements Margin {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setMarginBottom(String newMarginBottom) {
 		String oldMarginBottom = marginBottom;
 		marginBottom = newMarginBottom;
@@ -154,6 +158,7 @@ public class MarginImpl extends MinimalEObjectImpl.Container implements Margin {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getMargin() {
 		return margin;
 	}
@@ -163,6 +168,7 @@ public class MarginImpl extends MinimalEObjectImpl.Container implements Margin {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setMargin(String newMargin) {
 		String oldMargin = margin;
 		margin = newMargin;

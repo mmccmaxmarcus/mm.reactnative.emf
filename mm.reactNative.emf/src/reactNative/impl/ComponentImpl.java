@@ -136,6 +136,7 @@ public class ComponentImpl extends MinimalEObjectImpl.Container implements Compo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Text> getComponentTotext() {
 		if (componentTotext == null) {
 			componentTotext = new EObjectContainmentEList<Text>(Text.class, this, ReactNativePackage.COMPONENT__COMPONENT_TOTEXT);
@@ -148,6 +149,7 @@ public class ComponentImpl extends MinimalEObjectImpl.Container implements Compo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getComponentName() {
 		return componentName;
 	}
@@ -157,6 +159,7 @@ public class ComponentImpl extends MinimalEObjectImpl.Container implements Compo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setComponentName(String newComponentName) {
 		String oldComponentName = componentName;
 		componentName = newComponentName;
@@ -169,6 +172,7 @@ public class ComponentImpl extends MinimalEObjectImpl.Container implements Compo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<View> getComponentToView() {
 		if (componentToView == null) {
 			componentToView = new EObjectContainmentEList<View>(View.class, this, ReactNativePackage.COMPONENT__COMPONENT_TO_VIEW);
@@ -181,6 +185,7 @@ public class ComponentImpl extends MinimalEObjectImpl.Container implements Compo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isState() {
 		return state;
 	}
@@ -190,6 +195,7 @@ public class ComponentImpl extends MinimalEObjectImpl.Container implements Compo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setState(boolean newState) {
 		boolean oldState = state;
 		state = newState;
@@ -202,6 +208,7 @@ public class ComponentImpl extends MinimalEObjectImpl.Container implements Compo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TouchableOpacity getComponentToTouchableOpacity() {
 		return componentToTouchableOpacity;
 	}
@@ -226,6 +233,7 @@ public class ComponentImpl extends MinimalEObjectImpl.Container implements Compo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setComponentToTouchableOpacity(TouchableOpacity newComponentToTouchableOpacity) {
 		if (newComponentToTouchableOpacity != componentToTouchableOpacity) {
 			NotificationChain msgs = null;

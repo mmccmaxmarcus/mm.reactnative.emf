@@ -1,5 +1,6 @@
 package reactnative.education.emf.implement;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 import reactNative.Array;
@@ -363,15 +364,25 @@ public class ComponetsReactNative {
 	private StringBuilder getObjectToElements(ObjectElement object) {
 		StringBuilder arrayBuilder = new StringBuilder("");
 		object.getElementText().forEach(text -> {
-			arrayBuilder.append(String.format("%s: '%s',", text.getValueText(), text.getContentText()));
+			arrayBuilder.append(String.format("%s: '%s',\n", text.getValueText(), text.getContentText()));
+			
+			text.getElementTextToArray().forEach(array -> {
+				arrayBuilder.append(String.format(" %s: [%s], ", array.getValue(), getArrayToObject(array)));
+			});
 		});
 
 		object.getElementImage().forEach(image -> {
-			arrayBuilder.append(String.format("%s: require ('%s'},\n", image.getValueImage(), image.getContentImage()));
+			arrayBuilder.append(String.format("%s: require ('%s'}, %s\n", image.getValueImage(), image.getContentImage(), ""));
+			
+			image.getElementImageToArray().forEach(array -> {
+				arrayBuilder.append(String.format(" %s: [%s], ", array.getValue(), getArrayToObject(array)));
+			});
 		});
 		return arrayBuilder;
 
 	}
+	
+	
 
 	private StringBuilder getObjectToArray(ObjectElement object) {
 		StringBuilder arrayBuilder = new StringBuilder("");

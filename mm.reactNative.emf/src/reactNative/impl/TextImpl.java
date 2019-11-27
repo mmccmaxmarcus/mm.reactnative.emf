@@ -175,6 +175,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getContentText() {
 		return contentText;
 	}
@@ -184,6 +185,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContentText(String newContentText) {
 		String oldContentText = contentText;
 		contentText = newContentText;
@@ -196,6 +198,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getColor() {
 		return color;
 	}
@@ -205,6 +208,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setColor(String newColor) {
 		String oldColor = color;
 		color = newColor;
@@ -217,6 +221,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getFontSize() {
 		return fontSize;
 	}
@@ -226,6 +231,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFontSize(int newFontSize) {
 		int oldFontSize = fontSize;
 		fontSize = newFontSize;
@@ -238,6 +244,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getTextAlign() {
 		return textAlign;
 	}
@@ -247,6 +254,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTextAlign(String newTextAlign) {
 		String oldTextAlign = textAlign;
 		textAlign = newTextAlign;
@@ -259,6 +267,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -268,6 +277,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
@@ -280,6 +290,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<StyleSheet> getTextToStylesheet() {
 		if (textToStylesheet == null) {
 			textToStylesheet = new EObjectContainmentEList<StyleSheet>(StyleSheet.class, this, ReactNativePackage.TEXT__TEXT_TO_STYLESHEET);

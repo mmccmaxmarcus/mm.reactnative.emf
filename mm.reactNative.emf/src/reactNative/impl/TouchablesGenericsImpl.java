@@ -70,6 +70,7 @@ public abstract class TouchablesGenericsImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getOnPress() {
 		return onPress;
 	}
@@ -79,6 +80,7 @@ public abstract class TouchablesGenericsImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setOnPress(String newOnPress) {
 		String oldOnPress = onPress;
 		onPress = newOnPress;

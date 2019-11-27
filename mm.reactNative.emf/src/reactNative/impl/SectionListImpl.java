@@ -175,6 +175,7 @@ public class SectionListImpl extends MinimalEObjectImpl.Container implements Sec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getSectionListName() {
 		return sectionListName;
 	}
@@ -184,6 +185,7 @@ public class SectionListImpl extends MinimalEObjectImpl.Container implements Sec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSectionListName(String newSectionListName) {
 		String oldSectionListName = sectionListName;
 		sectionListName = newSectionListName;
@@ -196,6 +198,7 @@ public class SectionListImpl extends MinimalEObjectImpl.Container implements Sec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getSections() {
 		return sections;
 	}
@@ -205,6 +208,7 @@ public class SectionListImpl extends MinimalEObjectImpl.Container implements Sec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSections(String newSections) {
 		String oldSections = sections;
 		sections = newSections;
@@ -217,6 +221,7 @@ public class SectionListImpl extends MinimalEObjectImpl.Container implements Sec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getKeyExtractor() {
 		return keyExtractor;
 	}
@@ -226,6 +231,7 @@ public class SectionListImpl extends MinimalEObjectImpl.Container implements Sec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setKeyExtractor(String newKeyExtractor) {
 		String oldKeyExtractor = keyExtractor;
 		keyExtractor = newKeyExtractor;
@@ -238,6 +244,7 @@ public class SectionListImpl extends MinimalEObjectImpl.Container implements Sec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getRenderSectionHeader() {
 		return renderSectionHeader;
 	}
@@ -247,6 +254,7 @@ public class SectionListImpl extends MinimalEObjectImpl.Container implements Sec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setRenderSectionHeader(String newRenderSectionHeader) {
 		String oldRenderSectionHeader = renderSectionHeader;
 		renderSectionHeader = newRenderSectionHeader;
@@ -259,6 +267,7 @@ public class SectionListImpl extends MinimalEObjectImpl.Container implements Sec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getRenderItem() {
 		return renderItem;
 	}
@@ -268,6 +277,7 @@ public class SectionListImpl extends MinimalEObjectImpl.Container implements Sec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setRenderItem(String newRenderItem) {
 		String oldRenderItem = renderItem;
 		renderItem = newRenderItem;
@@ -280,6 +290,7 @@ public class SectionListImpl extends MinimalEObjectImpl.Container implements Sec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Array> getSectionListToArray() {
 		if (sectionListToArray == null) {
 			sectionListToArray = new EObjectContainmentEList<Array>(Array.class, this, ReactNativePackage.SECTION_LIST__SECTION_LIST_TO_ARRAY);

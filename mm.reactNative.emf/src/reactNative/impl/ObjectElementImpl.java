@@ -126,6 +126,7 @@ public class ObjectElementImpl extends MinimalEObjectImpl.Container implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ElementText> getElementText() {
 		if (elementText == null) {
 			elementText = new EObjectContainmentEList<ElementText>(ElementText.class, this, ReactNativePackage.OBJECT_ELEMENT__ELEMENT_TEXT);
@@ -138,6 +139,7 @@ public class ObjectElementImpl extends MinimalEObjectImpl.Container implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ElementImage> getElementImage() {
 		if (elementImage == null) {
 			elementImage = new EObjectContainmentEList<ElementImage>(ElementImage.class, this, ReactNativePackage.OBJECT_ELEMENT__ELEMENT_IMAGE);
@@ -150,6 +152,7 @@ public class ObjectElementImpl extends MinimalEObjectImpl.Container implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ObjectElement> getSubObjects() {
 		if (subObjects == null) {
 			subObjects = new EObjectContainmentEList<ObjectElement>(ObjectElement.class, this, ReactNativePackage.OBJECT_ELEMENT__SUB_OBJECTS);
@@ -162,6 +165,7 @@ public class ObjectElementImpl extends MinimalEObjectImpl.Container implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Array> getObjectToArray() {
 		if (objectToArray == null) {
 			objectToArray = new EObjectContainmentEList<Array>(Array.class, this, ReactNativePackage.OBJECT_ELEMENT__OBJECT_TO_ARRAY);
@@ -174,6 +178,7 @@ public class ObjectElementImpl extends MinimalEObjectImpl.Container implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isId() {
 		return id;
 	}
@@ -183,6 +188,7 @@ public class ObjectElementImpl extends MinimalEObjectImpl.Container implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(boolean newId) {
 		boolean oldId = id;
 		id = newId;

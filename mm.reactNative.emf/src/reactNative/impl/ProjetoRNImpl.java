@@ -91,6 +91,7 @@ public class ProjetoRNImpl extends MinimalEObjectImpl.Container implements Proje
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -100,6 +101,7 @@ public class ProjetoRNImpl extends MinimalEObjectImpl.Container implements Proje
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
@@ -112,6 +114,7 @@ public class ProjetoRNImpl extends MinimalEObjectImpl.Container implements Proje
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Component> getComponents() {
 		if (components == null) {
 			components = new EObjectContainmentEList<Component>(Component.class, this, ReactNativePackage.PROJETO_RN__COMPONENTS);

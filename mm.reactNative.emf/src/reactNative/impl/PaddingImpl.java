@@ -112,6 +112,7 @@ public class PaddingImpl extends MinimalEObjectImpl.Container implements Padding
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getPadding() {
 		return padding;
 	}
@@ -121,6 +122,7 @@ public class PaddingImpl extends MinimalEObjectImpl.Container implements Padding
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPadding(String newPadding) {
 		String oldPadding = padding;
 		padding = newPadding;
@@ -133,6 +135,7 @@ public class PaddingImpl extends MinimalEObjectImpl.Container implements Padding
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getPaddingHorizontal() {
 		return paddingHorizontal;
 	}
@@ -142,6 +145,7 @@ public class PaddingImpl extends MinimalEObjectImpl.Container implements Padding
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPaddingHorizontal(String newPaddingHorizontal) {
 		String oldPaddingHorizontal = paddingHorizontal;
 		paddingHorizontal = newPaddingHorizontal;
@@ -154,6 +158,7 @@ public class PaddingImpl extends MinimalEObjectImpl.Container implements Padding
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getPaddingVertical() {
 		return paddingVertical;
 	}
@@ -163,6 +168,7 @@ public class PaddingImpl extends MinimalEObjectImpl.Container implements Padding
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPaddingVertical(String newPaddingVertical) {
 		String oldPaddingVertical = paddingVertical;
 		paddingVertical = newPaddingVertical;

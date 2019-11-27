@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension
+         point="org.eclipse.core.runtime.applications"
+         id="ReactNativeEditorAdvisorApplication">
+      <!-- @generated reactNative -->
+      <application>
+         <run class="reactNative.presentation.ReactNativeEditorAdvisor$Application"/>
+      </application>
+   </extension>
+
+   <extension point="org.eclipse.ui.perspectives">
+      <!-- @generated reactNative -->
+      <perspective
+            name="%_UI_Perspective_label"
+            class="reactNative.presentation.ReactNativeEditorAdvisor$Perspective"
+            id="reactNative.presentation.ReactNativeEditorAdvisorPerspective">
+      </perspective>
+   </extension>
+
+   <extension point="org.eclipse.ui.commands">
+      <!-- @generated reactNative -->
+      <command
+            name="%_UI_Menu_OpenURI_label"
+            description="%_UI_Menu_OpenURI_description"
+            categoryId="org.eclipse.ui.category.file"
+            id="reactNative.presentation.ReactNativeEditorAdvisorOpenURICommand"/>
+      <command
+            name="%_UI_Menu_Open_label"
+            description="%_UI_Menu_Open_description"
+            categoryId="org.eclipse.ui.category.file"
+            id="reactNative.presentation.ReactNativeEditorAdvisorOpenCommand"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.bindings">
+      <!-- @generated reactNative -->
+      <key
+            commandId="reactNative.presentation.ReactNativeEditorAdvisorOpenURICommand"
+            sequence="M1+U"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+      <key
+            commandId="reactNative.presentation.ReactNativeEditorAdvisorOpenCommand"
+            sequence="M1+O"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.actionSets">
+      <!-- @generated reactNative -->
+      <actionSet
+            label="%_UI_ReactNativeEditorAdvisor_ActionSet_label"
+            visible="true"
+            id="ReactNativeEditorAdvisorActionSet">
+         <action
+               label="%_UI_Menu_About_label"
+               class="reactNative.presentation.ReactNativeEditorAdvisor$AboutAction"
+               menubarPath="help/additions"
+               id="reactNative.presentation.ReactNativeEditorAdvisorAboutAction"/>
+         <action
+               label="%_UI_Menu_OpenURI_label"
+               definitionId="reactNative.presentation.ReactNativeEditorAdvisorOpenURICommand"
+               class="reactNative.presentation.ReactNativeEditorAdvisor$OpenURIAction"
+               menubarPath="file/additions"
+               id="reactNative.presentation.ReactNativeEditorAdvisorOpenURIAction"/>
+         <action
+               label="%_UI_Menu_Open_label"
+               definitionId="reactNative.presentation.ReactNativeEditorAdvisorOpenCommand"
+               class="reactNative.presentation.ReactNativeEditorAdvisor$OpenAction"
+               menubarPath="file/additions"
+               id="reactNative.presentation.ReactNativeEditorAdvisorOpenAction"/>
+      </actionSet>
+   </extension>
+
+   <extension point="org.eclipse.ui.actionSets">
+      <!-- @generated reactNative -->
+      <actionSet
+            label="%_UI_ReactNativeModelWizard_ActionSet_label"
+            visible="true"
+            id="reactNative.presentation.ReactNativeActionBarContributorActionSet">
+         <action
+               label="%_UI_ReactNativeModelWizard_label"
+               class="reactNative.presentation.ReactNativeActionBarContributor$NewAction"
+               menubarPath="file/new/additions"
+               id="reactNative.presentation.ReactNativeActionBarContributorNewAction"/>
+      </actionSet>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated reactNative -->
+      <editor
+            id="reactNative.presentation.ReactNativeEditorID"
+            name="%_UI_ReactNativeEditor_label"
+            icon="icons/full/obj16/ReactNativeModelFile.gif"
+            extensions="reactnative"
+            class="reactNative.presentation.ReactNativeEditor"
+            contributorClass="reactNative.presentation.ReactNativeActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

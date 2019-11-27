@@ -4,18 +4,22 @@ export default class Module extends Component{
  
 state = { 
 module:[
-	{title: 'Itil v5', data: [
-	{id: Math.random(),moduleContent: 'Estratégia de serviço',subModuleContent: 'Module I', concept: []},
-	{id: Math.random(),moduleContent: 'Operação de Serviço',subModuleContent: 'Module II', },]},
-	{title: 'Cobit 5', },
-]
+	{moduleContent: 'Introduction to project management',
+ concepts: [
+	{concept: 'Project management',
+concept: 'Project',
+concept: 'What is Project Management?',
+concept: 'Stakeholders',
+concept: 'Sponsor',
+concept: 'PMI',
+ },], moduleContent: 'References',
+ },]
 }
 render() { 
 
 return( 
 	<View >
- 		<SectionList sections={state.module} keyExtractor={(item, index) => `${item.id}`} 
-renderSelectionHeader={({ section }) => ( <HeaderModule title={section.title}/>)} 
-renderItem={({ item }) => (<ContentModule key={item.id} {...item} moduleToConcept={moduleToConcept} />)}/>
+ 		<FlatList data={null} keyExtractor={null} 
+renderItem={null}/>
  	</View>
 )}

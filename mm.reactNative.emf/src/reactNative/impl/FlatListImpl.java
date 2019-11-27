@@ -166,6 +166,7 @@ public class FlatListImpl extends MinimalEObjectImpl.Container implements FlatLi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<View> getHasViews() {
 		if (hasViews == null) {
 			hasViews = new EObjectContainmentEList<View>(View.class, this, ReactNativePackage.FLAT_LIST__HAS_VIEWS);
@@ -178,6 +179,7 @@ public class FlatListImpl extends MinimalEObjectImpl.Container implements FlatLi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getFlatlistName() {
 		return flatlistName;
 	}
@@ -187,6 +189,7 @@ public class FlatListImpl extends MinimalEObjectImpl.Container implements FlatLi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFlatlistName(String newFlatlistName) {
 		String oldFlatlistName = flatlistName;
 		flatlistName = newFlatlistName;
@@ -199,6 +202,7 @@ public class FlatListImpl extends MinimalEObjectImpl.Container implements FlatLi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getData() {
 		return data;
 	}
@@ -208,6 +212,7 @@ public class FlatListImpl extends MinimalEObjectImpl.Container implements FlatLi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setData(String newData) {
 		String oldData = data;
 		data = newData;
@@ -220,6 +225,7 @@ public class FlatListImpl extends MinimalEObjectImpl.Container implements FlatLi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getRenderItem() {
 		return renderItem;
 	}
@@ -229,6 +235,7 @@ public class FlatListImpl extends MinimalEObjectImpl.Container implements FlatLi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setRenderItem(String newRenderItem) {
 		String oldRenderItem = renderItem;
 		renderItem = newRenderItem;
@@ -241,6 +248,7 @@ public class FlatListImpl extends MinimalEObjectImpl.Container implements FlatLi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getKeyExtractor() {
 		return keyExtractor;
 	}
@@ -250,6 +258,7 @@ public class FlatListImpl extends MinimalEObjectImpl.Container implements FlatLi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setKeyExtractor(String newKeyExtractor) {
 		String oldKeyExtractor = keyExtractor;
 		keyExtractor = newKeyExtractor;
@@ -262,6 +271,7 @@ public class FlatListImpl extends MinimalEObjectImpl.Container implements FlatLi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Array> getFlatListToArray() {
 		if (flatListToArray == null) {
 			flatListToArray = new EObjectContainmentEList<Array>(Array.class, this, ReactNativePackage.FLAT_LIST__FLAT_LIST_TO_ARRAY);

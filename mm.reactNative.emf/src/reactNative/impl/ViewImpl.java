@@ -209,6 +209,7 @@ public class ViewImpl extends MinimalEObjectImpl.Container implements View {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Text> getHasText() {
 		if (hasText == null) {
 			hasText = new EObjectContainmentEList<Text>(Text.class, this, ReactNativePackage.VIEW__HAS_TEXT);
@@ -221,6 +222,7 @@ public class ViewImpl extends MinimalEObjectImpl.Container implements View {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<FlatList> getViewToflatlists() {
 		if (viewToflatlists == null) {
 			viewToflatlists = new EObjectContainmentEList<FlatList>(FlatList.class, this, ReactNativePackage.VIEW__VIEW_TOFLATLISTS);
@@ -233,6 +235,7 @@ public class ViewImpl extends MinimalEObjectImpl.Container implements View {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getViewType() {
 		return viewType;
 	}
@@ -242,6 +245,7 @@ public class ViewImpl extends MinimalEObjectImpl.Container implements View {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setViewType(int newViewType) {
 		int oldViewType = viewType;
 		viewType = newViewType;
@@ -254,6 +258,7 @@ public class ViewImpl extends MinimalEObjectImpl.Container implements View {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getViewName() {
 		return viewName;
 	}
@@ -263,6 +268,7 @@ public class ViewImpl extends MinimalEObjectImpl.Container implements View {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setViewName(String newViewName) {
 		String oldViewName = viewName;
 		viewName = newViewName;
@@ -275,6 +281,7 @@ public class ViewImpl extends MinimalEObjectImpl.Container implements View {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Image> getHasImage() {
 		if (hasImage == null) {
 			hasImage = new EObjectContainmentEList<Image>(Image.class, this, ReactNativePackage.VIEW__HAS_IMAGE);
@@ -287,6 +294,7 @@ public class ViewImpl extends MinimalEObjectImpl.Container implements View {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<TouchableOpacity> getViewToTouchableOpacity() {
 		if (viewToTouchableOpacity == null) {
 			viewToTouchableOpacity = new EObjectContainmentEList<TouchableOpacity>(TouchableOpacity.class, this, ReactNativePackage.VIEW__VIEW_TO_TOUCHABLE_OPACITY);
@@ -299,6 +307,7 @@ public class ViewImpl extends MinimalEObjectImpl.Container implements View {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Icon> getViewToIcon() {
 		if (viewToIcon == null) {
 			viewToIcon = new EObjectContainmentEList<Icon>(Icon.class, this, ReactNativePackage.VIEW__VIEW_TO_ICON);
@@ -311,6 +320,7 @@ public class ViewImpl extends MinimalEObjectImpl.Container implements View {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Button> getViewToButton() {
 		if (viewToButton == null) {
 			viewToButton = new EObjectContainmentEList<Button>(Button.class, this, ReactNativePackage.VIEW__VIEW_TO_BUTTON);
@@ -323,6 +333,7 @@ public class ViewImpl extends MinimalEObjectImpl.Container implements View {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<View> getSubView() {
 		if (subView == null) {
 			subView = new EObjectContainmentEList<View>(View.class, this, ReactNativePackage.VIEW__SUB_VIEW);
@@ -335,6 +346,7 @@ public class ViewImpl extends MinimalEObjectImpl.Container implements View {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<StyleSheet> getViewToStyleSheet() {
 		if (viewToStyleSheet == null) {
 			viewToStyleSheet = new EObjectContainmentEList<StyleSheet>(StyleSheet.class, this, ReactNativePackage.VIEW__VIEW_TO_STYLE_SHEET);
@@ -347,6 +359,7 @@ public class ViewImpl extends MinimalEObjectImpl.Container implements View {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SectionList getViewToSectionList() {
 		return viewToSectionList;
 	}
@@ -371,6 +384,7 @@ public class ViewImpl extends MinimalEObjectImpl.Container implements View {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setViewToSectionList(SectionList newViewToSectionList) {
 		if (newViewToSectionList != viewToSectionList) {
 			NotificationChain msgs = null;
@@ -390,6 +404,7 @@ public class ViewImpl extends MinimalEObjectImpl.Container implements View {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void style(StyleSheet style) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT

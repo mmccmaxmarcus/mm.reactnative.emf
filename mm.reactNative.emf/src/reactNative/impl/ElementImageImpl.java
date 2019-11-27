@@ -112,6 +112,7 @@ public class ElementImageImpl extends MinimalEObjectImpl.Container implements El
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getContentImage() {
 		return contentImage;
 	}
@@ -121,6 +122,7 @@ public class ElementImageImpl extends MinimalEObjectImpl.Container implements El
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContentImage(String newContentImage) {
 		String oldContentImage = contentImage;
 		contentImage = newContentImage;
@@ -133,6 +135,7 @@ public class ElementImageImpl extends MinimalEObjectImpl.Container implements El
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getValueImage() {
 		return valueImage;
 	}
@@ -142,6 +145,7 @@ public class ElementImageImpl extends MinimalEObjectImpl.Container implements El
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setValueImage(String newValueImage) {
 		String oldValueImage = valueImage;
 		valueImage = newValueImage;
@@ -154,6 +158,7 @@ public class ElementImageImpl extends MinimalEObjectImpl.Container implements El
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Array> getElementImageToArray() {
 		if (elementImageToArray == null) {
 			elementImageToArray = new EObjectContainmentEList<Array>(Array.class, this, ReactNativePackage.ELEMENT_IMAGE__ELEMENT_IMAGE_TO_ARRAY);
