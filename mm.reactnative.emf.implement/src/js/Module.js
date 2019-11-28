@@ -4,22 +4,28 @@ export default class Module extends Component{
  
 state = { 
 module:[
-	{moduleContent: 'Introduction to project management',
- concepts: [
-	{concept: 'Project management',
-concept: 'Project',
-concept: 'What is Project Management?',
-concept: 'Stakeholders',
-concept: 'Sponsor',
-concept: 'PMI',
- },], moduleContent: 'References',
- },]
+	{id: Math.random(), module: 'Introduction to project management', concepts: [
+	{id: Math.random(), concept: 'Project management', elements: [
+	{ },
+	{ },
+	{ },],  },
+	{id: Math.random(), concept: 'Project', elements: [
+	{ },],  },
+	{id: Math.random(), concept: 'What is Project Management?', elements: [
+	{ },],  },
+	{id: Math.random(), concept: 'Stakeholders', elements: [
+	{ },],  },
+	{id: Math.random(), concept: 'Sponsor', elements: [
+	{ },],  },
+	{id: Math.random(), concept: 'PMI', elements: [
+	{ },],  },],  },
+	{id: Math.random(), module: 'References', },]
 }
 render() { 
 
 return( 
 	<View >
- 		<FlatList data={null} keyExtractor={null} 
-renderItem={null}/>
+ 		<FlatList data={state.module} keyExtractor={item} 
+renderItem={}/>
  	</View>
 )}

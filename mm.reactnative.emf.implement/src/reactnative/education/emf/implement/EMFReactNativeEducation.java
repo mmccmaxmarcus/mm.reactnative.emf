@@ -52,8 +52,8 @@ public class EMFReactNativeEducation {
 	static boolean myheader;
 
 	public static void main(String[] args) {
-		String loadFileMmReactNative = "C:\\Users\\MAX-PC\\Desktop\\Modelos\\mmEmf.reactnative";
-		String loadFileMmMobile = "C:\\Users\\MAX-PC\\Desktop\\Modelos\\ProjectManagementEN(1).mmMobileLearning";
+		String loadFileMmReactNative = "/home/gemel/Modelos/mm.reactnative";
+		String loadFileMmMobile = "/home/gemel/Modelos/ProjectManagementEN.mmMobileLearning";
 		mKnowledgeDomain = loadModelMobile(loadFileMmMobile);
 
 		MobileLearningToReact learningToReact = new MobileLearningToReact(mKnowledgeDomain);
@@ -63,7 +63,7 @@ public class EMFReactNativeEducation {
 		
 		projetoRN = loadModelReactnative(loadFileMmReactNative);
 		
-		String pathSaveFile = "C:\\Users\\MAX-PC\\Desktop\\git\\mmreactnative\\mm.reactnative.emf\\mm.reactnative.emf.implement\\src\\js\\";
+		String pathSaveFile = "/home/gemel/Área de Trabalho/mmreact/mm.reactnative.emf/mm.reactnative.emf.implement/src/js/";
 		
 		
 		projetoRN.getComponents().forEach(components -> {
