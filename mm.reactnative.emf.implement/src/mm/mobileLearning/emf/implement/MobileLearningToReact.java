@@ -68,6 +68,7 @@ public class MobileLearningToReact extends ComponetsReactNative {
 				ElementText elementTextModule = createElementText(module.getLabel(), module.getNameModule());
 				objectElementModule.getElementText().add(elementTextModule);
 				arrayContainer.getArrayToObjects().add(objectElementModule);
+<<<<<<< HEAD
 				
 				// Adiciona array concept dentro do modulo
 				Array arrayConcept = createArray("concepts");
@@ -110,6 +111,17 @@ public class MobileLearningToReact extends ComponetsReactNative {
 						}
 						
 						
+=======
+				// Adiciona array concept dentro do modulo
+				Array arrayConcept = createArray("concepts");
+
+				module.getMModuleToScreen().forEach(screeModule -> {
+					Component componentModule = createComponent(screeModule.getLabel(), Boolean.TRUE);
+					this.projetoRN.getComponents().add(componentModule);
+					
+					screeModule.getScreenToElementInterface().forEach(elementModule -> {
+						System.out.println((((Text) elementModule).getTextDisplay())); 
+>>>>>>> 3dd877c848a3791c89b7e5b4ea4a3eb966f825f8
 
 					});
 					
@@ -131,6 +143,7 @@ public class MobileLearningToReact extends ComponetsReactNative {
 					concept.getMConceptToScreen().forEach(screenConcept -> {
 						ObjectElement objectElements = createObjectElement(Boolean.FALSE);
 						arrayElements.getArrayToObjects().add(objectElements);
+<<<<<<< HEAD
 						elementTextConcept.getElementTextToArray().add(arrayElements);
 						
 						screenConcept.getScreenToElementInterface().forEach(elementConcept -> {
@@ -173,6 +186,11 @@ public class MobileLearningToReact extends ComponetsReactNative {
 								});
 							}
 						});
+=======
+						
+				
+						elementTextConcept.getElementTextToArray().add(arrayElements);
+>>>>>>> 3dd877c848a3791c89b7e5b4ea4a3eb966f825f8
 						
 					});
 				});

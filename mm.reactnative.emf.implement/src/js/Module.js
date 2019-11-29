@@ -4,6 +4,7 @@ export default class Module extends Component{
  
 state = { 
 module:[
+<<<<<<< HEAD
 	{id: Math.random(), moduleContent: 'Introduction to project management', concepts: [
 	{id: Math.random(), concept: 'Project management', elements: [
 	{title: 'Project management is not new. Think of the pyramids of Egypt differently. Think about how the life cycle of a building enterprise, built before Christ, was built not just overnight.',
@@ -76,6 +77,24 @@ module:[
 	{id: Math.random(), moduleContent: 'References', elementsModules: [
 	{title: 'PMI (Project Management Institute). Um Guia do Conhecimento em Gerenciamento de Projetos (Guia PMBOK®) – Quinta Edição. Newtown Square: Project Management Institute, 2013
 ',title: 'HELDMAN, Kim. Gerência de projetos, Guia para o exame official do PMI. 5º edição, PMI. Campus, 2009.', },]},]
+=======
+	{id: Math.random(), module: 'Introduction to project management', concepts: [
+	{id: Math.random(), concept: 'Project management', elements: [
+	{ },
+	{ },
+	{ },],  },
+	{id: Math.random(), concept: 'Project', elements: [
+	{ },],  },
+	{id: Math.random(), concept: 'What is Project Management?', elements: [
+	{ },],  },
+	{id: Math.random(), concept: 'Stakeholders', elements: [
+	{ },],  },
+	{id: Math.random(), concept: 'Sponsor', elements: [
+	{ },],  },
+	{id: Math.random(), concept: 'PMI', elements: [
+	{ },],  },],  },
+	{id: Math.random(), module: 'References', },]
+>>>>>>> 3dd877c848a3791c89b7e5b4ea4a3eb966f825f8
 }
 render() { 
 
