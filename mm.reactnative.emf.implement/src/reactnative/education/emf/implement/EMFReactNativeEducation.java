@@ -36,7 +36,7 @@ public class EMFReactNativeEducation {
 	static View view = reactNativeFactory.createView();
 	static FlatList flatList = reactNativeFactory.createFlatList();
 	// static Component component = reactNativeFactory.createComponent();
-	static ProjetoRN projetoRN = reactNativeFactory.createProjetoRN();
+	static ProjetoRN projetoRN;
 	
 	static MKnowledgeDomain mKnowledgeDomain = mobileLearningFactory.createMKnowledgeDomain();
 	
@@ -53,13 +53,18 @@ public class EMFReactNativeEducation {
 
 	public static void main(String[] args) {
 		String loadFileMmReactNative = "C:\\Users\\MAX-PC\\Desktop\\Modelos\\mmEmf.reactnative";
+		String loadFileToMmMobileToMmReactNative = "C:\\Users\\MAX-PC\\Desktop\\Modelos\\mmEmf.reactnative";
+
 		String loadFileMmMobile = "C:\\Users\\MAX-PC\\Desktop\\Modelos\\ProjectManagementEN(1).mmMobileLearning";
 		mKnowledgeDomain = loadModelMobile(loadFileMmMobile);
+		
+		projetoRN = reactNativeFactory.createProjetoRN();
 
 		MobileLearningToReact learningToReact = new MobileLearningToReact(mKnowledgeDomain);
-		ProjetoRN projetoRNResult = learningToReact.projectReact();
-		saveReactnativeModel(projetoRNResult, loadFileMmReactNative);
-		
+		projetoRN = learningToReact.projectReact();
+		saveReactnativeModel(projetoRN, loadFileToMmMobileToMmReactNative);
+	
+		projetoRN = reactNativeFactory.createProjetoRN();
 		
 		projetoRN = loadModelReactnative(loadFileMmReactNative);
 		

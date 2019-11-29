@@ -354,7 +354,7 @@ public class ComponetsReactNative {
 	private StringBuilder getArrayToObject(Array array) {
 		StringBuilder arrayBuilder = new StringBuilder();
 		array.getArrayToObjects().forEach(object -> {
-			arrayBuilder.append(String.format("\n\t{%s%s %s},", object.isId() ? "id: Math.random()," : "",
+			arrayBuilder.append(String.format("\n\t{%s%s %s},", object.isId() ? "id: Math.random(), " : "",
 					this.getObjectToElements(object), this.getObjectToArray(object)));
 		});
 
@@ -364,18 +364,18 @@ public class ComponetsReactNative {
 	private StringBuilder getObjectToElements(ObjectElement object) {
 		StringBuilder arrayBuilder = new StringBuilder("");
 		object.getElementText().forEach(text -> {
-			arrayBuilder.append(String.format("%s: '%s',\n", text.getValueText(), text.getContentText()));
+			arrayBuilder.append(String.format("%s: '%s',", text.getValueText(), text.getContentText()));
 			
 			text.getElementTextToArray().forEach(array -> {
-				arrayBuilder.append(String.format(" %s: [%s], ", array.getValue(), getArrayToObject(array)));
+				arrayBuilder.append(String.format(" %s: [%s], \n ", array.getValue(), getArrayToObject(array)));
 			});
 		});
 
 		object.getElementImage().forEach(image -> {
-			arrayBuilder.append(String.format("%s: require ('%s'}, %s\n", image.getValueImage(), image.getContentImage(), ""));
+			arrayBuilder.append(String.format("%s: require ('%s'}, %s", image.getValueImage(), image.getContentImage(), ""));
 			
 			image.getElementImageToArray().forEach(array -> {
-				arrayBuilder.append(String.format(" %s: [%s], ", array.getValue(), getArrayToObject(array)));
+				arrayBuilder.append(String.format(" %s: [%s], \n ", array.getValue(), getArrayToObject(array)));
 			});
 		});
 		return arrayBuilder;
